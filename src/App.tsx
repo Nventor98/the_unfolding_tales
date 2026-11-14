@@ -277,10 +277,15 @@ export default function App() {
       <IntroOverlay
         open={introOpen}
         stats={dataset.stats}
+        sites={sites}
         onEnter={() => setIntroOpen(false)}
         onAbout={() => {
           setIntroOpen(false);
           setAboutOpen(true);
+        }}
+        onDetails={(site) => {
+          setIntroOpen(false);
+          selectSite(site);
         }}
       />
 
