@@ -24,7 +24,7 @@ export function TopBar({
           </svg>
         </span>
         <span className="brand-text">
-          <span className="brand-title">Abandoned but Not Forgotten</span>
+          <span className="brand-title">Unfolding Tales</span>
           <span className="brand-sub">
             {recordCount} documented sites · {bodyName}
           </span>
@@ -301,7 +301,7 @@ export function LoadingScreen({ error }: { error?: string | null }) {
     <div className="loading-screen">
       <div className="loading-brand">
         <span className="loading-orbit" aria-hidden="true" />
-        <h1>Abandoned but Not Forgotten</h1>
+        <h1>Unfolding Tales</h1>
       </div>
       {error ? (
         <div className="loading-error">
