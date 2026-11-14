@@ -1,0 +1,23 @@
+[Optional / Online] NASA Source Pages (NSSDCA, GISS Mars24)
+        │  npm run ingest  (or --from=data/raw for saved HTML)
+        ▼
+data/ingested/*.json          (committed NASA coordinate snapshots)
+        +
+data/curated/*.json           (hand-curated site records & narratives)
+        +
+data/taxonomy.json            (bodies, categories, colors, intro metadata)
+        │
+        │  npm run data:validate   (validate only)
+        │  npm run data:build      (validate + cross-check + emit)
+        ▼
+public/data/sites.json        (runtime dataset)
+public/data/manifest.json     (summary metadata & stats)
+        │
+        │  tsc -b && vite build    (via npm run build)
+        ▼
+dist/                         (static SPA bundle + textures + JSON data)
+        │
+        │  .github/workflows/deploy.yml (push to main / manual dispatch)
+        ▼
+GitHub Pages                  (https://<owner>.github.io/<repo>/)
+
