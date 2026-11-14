@@ -12,7 +12,7 @@ space-agency) sources; where the record is uncertain the product says so rather 
 guessing.
 
 ```
- 150 records · 4 bodies · 92 unique source pages · 1917–2025
+ 143 sourced records · 4 bodies · 93 source pages · 1917–2025
 ```
 
 ---
@@ -103,7 +103,7 @@ context, and browsers only grant `speechSynthesis` there.
 
 ```
 data/taxonomy.json          bodies, categories, colours, intro copy
-data/curated/*.json         150 hand-curated records (7 files)
+data/curated/*.json         143 hand-curated records (7 files)
 data/ingested/*.json        machine-readable NASA source tables (snapshots)
         │
         ├─ scripts/validate-dataset.mjs   schema + duplicate + coordinate checks

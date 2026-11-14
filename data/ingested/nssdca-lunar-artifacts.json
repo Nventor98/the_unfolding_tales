@@ -4,7 +4,7 @@
   "publisher": "NASA NSSDCA (Dr. David R. Williams)",
   "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
   "retrieved": "2026-11-14",
-  "notes": "NASA NSSDCA table of anthropogenic impacts and spacecraft on the Moon. Coordinates are planetocentric Mean Earth/Polar Axis (DE421), degrees east (-180..180) here; source prints 0..360 E. Rows marked imaged by LROC are surveyed/mapped; others are approximate/uncertain as noted per record. Expanded 2026-11-14 with additional NSSDCA rows for Ranger 3/5/10, Luna 5/7/8, Surveyor 4, Hiten, SMART-1, Chang'e 1-6, Kaguya, Okina, Beresheet, Vikram, Longjiang 2, Hakuto-R 1/2, SLIM and Apollo 11 LRRR, following the Space Data Atlas challenge page datasets (Catalogue of Manmade Material on the Moon, LROC Featured Sites, NSSDCA Master Catalog).",
+  "notes": "NASA NSSDCA table of anthropogenic impacts and spacecraft on the Moon. Coordinates are planetocentric Mean Earth/Polar Axis (DE421), degrees east (-180..180) here; source prints 0..360 E. Rows marked imaged by LROC are surveyed/mapped; others are approximate/uncertain as noted per record. Expanded 2026-11-14 with additional NSSDCA rows for Ranger 3/5/10, Luna 5/7/8, Surveyor 4, Hiten, SMART-1, Chang'e 1-6, Kaguya, Okina, Beresheet, Vikram, Longjiang 2, Hakuto-R 1/2, SLIM and Apollo 11 LRRR, following the Space Data Atlas challenge page datasets (Catalogue of Manmade Material on the Moon, LROC Featured Sites, NSSDCA Master Catalog). Two additional rows included in the 2026-11-14 snapshot: Chandrayaan-1 MIP (estimate; exact point unknown) and Apollo 16 subsatellite (NSSDCA table precision; catalog estimate is 111.94 E).",
   "records": [
     {
       "match": "Apollo 11 LM descent stage",
@@ -725,6 +725,24 @@
       "lat": 44.1208,
       "lon": -19.5122,
       "raw": "44.1208 N, 340.4878 E"
+    },
+    {
+      "match": "Chandraya'an 1 MIP",
+      "spacecraft": "Chandrayaan-1",
+      "type": "Impact probe",
+      "date": "2008-11-14",
+      "lat": -89.0,
+      "lon": -30.0,
+      "raw": "89 S, 30 W; exact coordinates unknown; estimated near Shackleton crater"
+    },
+    {
+      "match": "Apollo 16 subsatellite",
+      "spacecraft": "Apollo 16 PFS-2",
+      "type": "Particles and fields subsatellite",
+      "date": "1972-05-29",
+      "lat": 10.16,
+      "lon": 111.9,
+      "raw": "10.16 N, 111.9 E (table rounds the NSSDCA catalog estimate 111.94 E)"
     }
   ]
 }
