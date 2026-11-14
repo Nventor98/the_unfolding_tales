@@ -1,0 +1,563 @@
+{
+  "sites": [
+    {
+      "id": "venus-venera-3",
+      "body": "venus",
+      "name": "Venera 3",
+      "siteName": "Southern hemisphere region",
+      "mission": "Venera 3",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1966-03-01",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": 20.0,
+      "lon": -80.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 3 (20 N, 80 W); no data returned from the surface.",
+      "summary": "Venera 3 was the first spacecraft to reach another planet's surface — it crashed at 20 N, 80 W in 1966 and never answered.",
+      "narrative": [
+        "Venera 3 launched in November 1965 to land on Venus. On 1 March 1966 it became the first spacecraft to reach the surface of another planet, impacting at about 20 degrees north, 80 degrees west, but its communications failed and no data was returned.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 3 lander", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "1 March 1966" }, { "label": "Location", "value": "20 N, 80 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 3", "impact", "1966", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 3", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-4", "venus-venera-5", "venus-venera-6"]
+    },
+    {
+      "id": "venus-venera-4",
+      "body": "venus",
+      "name": "Venera 4",
+      "siteName": "Equatorial region",
+      "mission": "Venera 4",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1967-10-18",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": 19.0,
+      "lon": -38.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 4 (19 N, 38 W).",
+      "summary": "Venera 4 measured Venus' atmosphere during descent in 1967, then crushed at 19 N, 38 W.",
+      "narrative": [
+        "Venera 4 launched in June 1967 and measured the Venusian atmosphere during descent, finding it hotter and denser than expected. On 18 October 1967 the lander impacted at about 19 degrees north, 38 degrees west.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 4 lander", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "18 October 1967" }, { "label": "Location", "value": "19 N, 38 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 4", "impact", "1967", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 4", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-3", "venus-venera-5", "venus-venera-6"]
+    },
+    {
+      "id": "venus-venera-5",
+      "body": "venus",
+      "name": "Venera 5",
+      "siteName": "Equatorial region",
+      "mission": "Venera 5",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1969-05-16",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -1.5,
+      "lon": -19.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 5 (1.5 S, 19 W).",
+      "summary": "Venera 5 descended into Venus' atmosphere in 1969 and was crushed at 1.5 S, 19 W.",
+      "narrative": [
+        "Venera 5 launched in January 1969 to measure the Venusian atmosphere. On 16 May 1969 it descended to about 1.5 degrees south, 19 degrees west, where the pressure crushed the lander.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 5 lander", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "16 May 1969" }, { "label": "Location", "value": "1.5 S, 19 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 5", "impact", "1969", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 5", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-4", "venus-venera-6", "venus-venera-7"]
+    },
+    {
+      "id": "venus-venera-6",
+      "body": "venus",
+      "name": "Venera 6",
+      "siteName": "Equatorial region",
+      "mission": "Venera 6",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1969-01-17",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -5.0,
+      "lon": -23.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 6 (5 S, 23 W).",
+      "summary": "Venera 6 measured Venus' atmosphere in 1969 before being crushed at 5 S, 23 W.",
+      "narrative": [
+        "Venera 6 launched in November 1968 and measured the Venusian atmosphere during descent. On 17 January 1969 it was crushed at about 5 degrees south, 23 degrees west.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 6 lander", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "17 January 1969" }, { "label": "Location", "value": "5 S, 23 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 6", "impact", "1969", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 6", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-5", "venus-venera-7", "venus-venera-8"]
+    },
+    {
+      "id": "venus-venera-7",
+      "body": "venus",
+      "name": "Venera 7",
+      "siteName": "Equatorial region",
+      "mission": "Venera 7",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1970-12-15",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -5.0,
+      "lon": -9.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 7 (5 S, 351 E); converted to -9 longitude.",
+      "summary": "Venera 7 tipped over on landing in 1970 and transmitted weakly from 5 S, 9 W before falling silent.",
+      "narrative": [
+        "Venera 7 launched in August 1970 to land on Venus. On 15 December 1970 it impacted at about 5 degrees south, 9 degrees west (351 degrees east), tipped over, and transmitted only a weak signal for 23 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 7 lander", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "15 December 1970" }, { "label": "Location", "value": "5 S, 9 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 7", "impact", "1970", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 7", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-6", "venus-venera-8", "venus-venera-9"]
+    },
+    {
+      "id": "venus-venera-8",
+      "body": "venus",
+      "name": "Venera 8",
+      "siteName": "Equatorial region",
+      "mission": "Venera 8",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1972-07-22",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -10.0,
+      "lon": -25.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 8 (10 S, 335 E); converted to -25 longitude.",
+      "summary": "Venera 8 measured Venus' surface conditions in 1972 before being crushed at 10 S, 25 W.",
+      "narrative": [
+        "Venera 8 launched in July 1972 to measure surface conditions on Venus. On 22 July 1972 it impacted at about 10 degrees south, 25 degrees west (335 degrees east) and transmitted for about 50 minutes before being crushed.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 8 lander", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "22 July 1972" }, { "label": "Location", "value": "10 S, 25 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 8", "impact", "1972", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 8", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-7", "venus-venera-9", "venus-venera-10"]
+    },
+    {
+      "id": "venus-venera-9",
+      "body": "venus",
+      "name": "Venera 9 lander",
+      "siteName": "Beta Regio region",
+      "mission": "Venera 9",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — first images from Venus surface",
+      "date": "1975-10-22",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 31.01,
+      "lon": -68.36,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Landing within 150 km radius of 31.01 N, 291.64 E as published; converted to -68.36 longitude. Exact landfall unknown.",
+      "summary": "Venera 9 sent the first pictures from Venus' surface in 1975, then fell silent at 31.01 N, 68.36 W.",
+      "narrative": [
+        "Venera 9 landed on 22 October 1975 within 150 km of 31.01 degrees north, 68.36 degrees west (291.64 degrees east) and returned the first images from the surface of Venus, showing a rocky plain under a bright sky. It transmitted for 53 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus. The exact landfall is known only to within 150 km, so the marker is shown as approximate."
+      ],
+      "artifacts": [{ "name": "Venera 9 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "22 October 1975" }, { "label": "Location", "value": "31.01 N, 68.36 W (within 150 km)" }, { "label": "Surface transmission", "value": "53 minutes" }],
+      "images": [],
+      "keywords": ["Venera 9", "landing", "1975", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 9", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-10", "venus-venera-13", "venus-venera-14"]
+    },
+    {
+      "id": "venus-venera-10",
+      "body": "venus",
+      "name": "Venera 10 lander",
+      "siteName": "Beta Regio region",
+      "mission": "Venera 10",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1975-10-25",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 15.42,
+      "lon": -68.49,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Landing within 150 km radius of 15.42 N, 291.51 E as published; converted to -68.49 longitude.",
+      "summary": "Venera 10 landed three days after Venera 9 in 1975 and transmitted from 15.42 N, 68.49 W for 65 minutes.",
+      "narrative": [
+        "Venera 10 landed on 25 October 1975 within 150 km of 15.42 degrees north, 68.49 degrees west (291.51 degrees east), about 2,200 km from Venera 9. It transmitted images and environmental data for 65 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 10 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "25 October 1975" }, { "label": "Location", "value": "15.42 N, 68.49 W (within 150 km)" }, { "label": "Surface transmission", "value": "65 minutes" }],
+      "images": [],
+      "keywords": ["Venera 10", "landing", "1975", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 10", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-9", "venus-venera-11", "venus-venera-12"]
+    },
+    {
+      "id": "venus-venera-11",
+      "body": "venus",
+      "name": "Venera 11 lander",
+      "siteName": "Southern hemisphere region",
+      "mission": "Venera 11",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1978-12-25",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -14.0,
+      "lon": -61.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 11 (14 S, 299 E); converted to -61 longitude.",
+      "summary": "Venera 11 landed on Christmas Day 1978 at 14 S, 61 W and measured the surface for 95 minutes.",
+      "narrative": [
+        "Venera 11 landed on 25 December 1978 at about 14 degrees south, 61 degrees west (299 degrees east). It measured surface conditions for 95 minutes before falling silent.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 11 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "25 December 1978" }, { "label": "Location", "value": "14 S, 61 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 11", "landing", "1978", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 11", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-10", "venus-venera-12", "venus-venera-13"]
+    },
+    {
+      "id": "venus-venera-12",
+      "body": "venus",
+      "name": "Venera 12 lander",
+      "siteName": "Southern hemisphere region",
+      "mission": "Venera 12",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1978-12-25",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -7.0,
+      "lon": -66.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 12 (7 S, 294 E); converted to -66 longitude.",
+      "summary": "Venera 12 landed the same day as Venera 11 in 1978, at 7 S, 66 W, and transmitted for 110 minutes.",
+      "narrative": [
+        "Venera 12 landed on 25 December 1978 at about 7 degrees south, 66 degrees west (294 degrees east), the same day as Venera 11. It transmitted for 110 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 12 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "25 December 1978" }, { "label": "Location", "value": "7 S, 66 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 12", "landing", "1978", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 12", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-11", "venus-venera-13", "venus-venera-14"]
+    },
+    {
+      "id": "venus-venera-13",
+      "body": "venus",
+      "name": "Venera 13 lander",
+      "siteName": "Phoebe Regio region",
+      "mission": "Venera 13",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — first colour images from Venus surface",
+      "date": "1982-03-01",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -7.5,
+      "lon": -55.5,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 13 (7.5 S, 304.5 E); converted to -55.5 longitude.",
+      "summary": "Venera 13 sent the first colour pictures from Venus in 1982, surviving 127 minutes at 7.5 S, 55.5 W.",
+      "narrative": [
+        "Venera 13 landed on 1 March 1982 at about 7.5 degrees south, 55.5 degrees west (304.5 degrees east), east of Phoebe Regio. It returned the first colour images from the Venus surface and survived for 127 minutes, far longer than its 32-minute design life.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 13 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "1 March 1982" }, { "label": "Location", "value": "7.5 S, 55.5 W (approximate)" }, { "label": "Surface transmission", "value": "127 minutes" }],
+      "images": [],
+      "keywords": ["Venera 13", "landing", "1982", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 13", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-14", "venus-venera-9", "venus-vega-1"]
+    },
+    {
+      "id": "venus-venera-14",
+      "body": "venus",
+      "name": "Venera 14 lander",
+      "siteName": "Phoebe Regio region",
+      "mission": "Venera 14",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1982-03-05",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -13.25,
+      "lon": -49.9,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 14 (13.25 S, 310.1 E); converted to -49.9 longitude.",
+      "summary": "Venera 14 landed 950 km from Venera 13 in 1982 and transmitted from 13.25 S, 49.9 W for 57 minutes.",
+      "narrative": [
+        "Venera 14 landed on 5 March 1982 at about 13.25 degrees south, 49.9 degrees west (310.1 degrees east), about 950 km from Venera 13. It transmitted for 57 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Venera 14 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "5 March 1982" }, { "label": "Location", "value": "13.25 S, 49.9 W (approximate)" }],
+      "images": [],
+      "keywords": ["Venera 14", "landing", "1982", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Venera 14", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-13", "venus-vega-1", "venus-vega-2"]
+    },
+    {
+      "id": "venus-vega-1",
+      "body": "venus",
+      "name": "Vega 1 lander",
+      "siteName": "Rusalka Planitia region",
+      "mission": "Vega 1",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Vega program",
+      "date": "1985-06-11",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 7.5,
+      "lon": 177.7,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Vega 1 (7.5 N, 177.7 E).",
+      "summary": "Vega 1 landed on Venus in 1985 at 7.5 N, 177.7 E, then flew on to Halley's Comet — its lander is still there.",
+      "narrative": [
+        "Vega 1 launched in December 1984 to land on Venus and then fly on to Halley's Comet. On 11 June 1985 its lander touched down at about 7.5 degrees north, 177.7 degrees east in Rusalka Planitia and transmitted for about 56 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Vega 1 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "11 June 1985" }, { "label": "Location", "value": "7.5 N, 177.7 E (approximate)" }],
+      "images": [],
+      "keywords": ["Vega 1", "landing", "1985", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Vega 1", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-vega-2", "venus-venera-13", "venus-venera-14"]
+    },
+    {
+      "id": "venus-vega-2",
+      "body": "venus",
+      "name": "Vega 2 lander",
+      "siteName": "Southern hemisphere region",
+      "mission": "Vega 2",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Vega program",
+      "date": "1985-06-15",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -8.5,
+      "lon": 164.5,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Vega 2 (8.5 S, 164.5 E).",
+      "summary": "Vega 2 landed on Venus in 1985 at 8.5 S, 164.5 E and transmitted for 46 minutes before falling silent.",
+      "narrative": [
+        "Vega 2 launched in December 1984 to land on Venus and then fly on to Halley's Comet. On 15 June 1985 its lander touched down at about 8.5 degrees south, 164.5 degrees east and transmitted for about 46 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Vega 2 lander", "status": "Still on surface" }],
+      "facts": [{ "label": "Landing", "value": "15 June 1985" }, { "label": "Location", "value": "8.5 S, 164.5 E (approximate)" }],
+      "images": [],
+      "keywords": ["Vega 2", "landing", "1985", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Vega 2", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-vega-1", "venus-venera-14", "venus-magellan"]
+    },
+    {
+      "id": "venus-pioneer-orbiter",
+      "body": "venus",
+      "name": "Pioneer Venus Orbiter",
+      "siteName": "Southern hemisphere region",
+      "mission": "Pioneer Venus Orbiter",
+      "program": "Pioneer Venus",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Venus mapping mission",
+      "date": "1992-10-08",
+      "status": "Mission complete — orbiter intentionally impacted Venus",
+      "statusKind": "success",
+      "lat": -3.9,
+      "lon": -112.3,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Pioneer Venus Orbiter (3.9 S, 247.7 E); converted to -112.3 longitude.",
+      "summary": "NASA's Pioneer Venus Orbiter mapped Venus for 14 years, then was crashed at 3.9 S, 112.3 W in 1992.",
+      "narrative": [
+        "The Pioneer Venus Orbiter arrived at Venus in 1978 and mapped the surface with radar for 14 years. On 8 October 1992 it was intentionally impacted at about 3.9 degrees south, 112.3 degrees west (247.7 degrees east).",
+        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Pioneer Venus Orbiter", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "8 October 1992" }, { "label": "Location", "value": "3.9 S, 112.3 W (approximate)" }],
+      "images": [],
+      "keywords": ["Pioneer Venus Orbiter", "impact", "1992", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Pioneer Venus Orbiter", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-magellan", "venus-pv-large-probe", "venus-pv-bus"]
+    },
+    {
+      "id": "venus-magellan",
+      "body": "venus",
+      "name": "Magellan spacecraft",
+      "siteName": "Southern hemisphere region",
+      "mission": "Magellan",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Venus radar mapping mission",
+      "date": "1994-10-12",
+      "status": "Mission complete — spacecraft intentionally impacted Venus",
+      "statusKind": "success",
+      "lat": -6.4,
+      "lon": 147.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Magellan (6.4 S, 147 E).",
+      "summary": "Magellan mapped 98% of Venus with radar, then was crashed at 6.4 S, 147 E in 1994.",
+      "narrative": [
+        "Magellan arrived at Venus in 1990 and mapped 98% of the surface with radar, revealing volcanoes and impact craters beneath the clouds. On 12 October 1994 it was intentionally impacted at about 6.4 degrees south, 147 degrees east.",
+        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Magellan spacecraft", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "12 October 1994" }, { "label": "Location", "value": "6.4 S, 147 E (approximate)" }],
+      "images": [],
+      "keywords": ["Magellan", "impact", "1994", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Magellan", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-pioneer-orbiter", "venus-pv-large-probe", "venus-vega-2"]
+    },
+    {
+      "id": "venus-kosmos-482",
+      "body": "venus",
+      "name": "Kosmos 482 descent craft",
+      "siteName": "Southern hemisphere region",
+      "mission": "Kosmos 482",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program (failed mission)",
+      "date": "1972-05-03",
+      "status": "Mission failed — descent craft impacted Venus",
+      "statusKind": "failure",
+      "lat": -1.3,
+      "lon": -55.0,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Kosmos 482 (1.3 S, 305 E); converted to -55 longitude. The mission failed in Earth orbit and the descent craft fell to Venus.",
+      "summary": "Kosmos 482 was a Venera lander that failed in Earth orbit in 1972, then fell to Venus and crashed at 1.3 S, 55 W.",
+      "narrative": [
+        "Kosmos 482 launched in March 1972 as a Venera lander, but its upper stage failed in Earth orbit. The descent craft remained in Earth orbit for 10 years, then fell to Venus and impacted on 3 May 1972 at about 1.3 degrees south, 55 degrees west (305 degrees east).",
+        "The descent craft remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [{ "name": "Kosmos 482 descent craft", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "3 May 1972" }, { "label": "Location", "value": "1.3 S, 55 W (approximate)" }],
+      "images": [],
+      "keywords": ["Kosmos 482", "impact", "1972", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Kosmos 482", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["venus-venera-8", "venus-venera-7", "venus-venera-9"]
+    },
+    {
+      "id": "earth-phobos-grunt",
+      "body": "earth",
+      "name": "Phobos-Grunt / Yinghuo-1 reentry",
+      "siteName": "South Pacific Ocean",
+      "mission": "Phobos-Grunt / Yinghuo-1",
+      "agency": "Roscosmos (Russia) / CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Reentered spacecraft — failed Mars mission",
+      "date": "2012-01-15",
+      "status": "Mission failed — spacecraft reentered Earth and was lost",
+      "statusKind": "failure",
+      "lat": -32.7,
+      "lon": -161.1,
+      "coordSystem": "WGS 84 geographic (latitude, longitude east of Greenwich)",
+      "coordAccuracy": "uncertain",
+      "coordNote": "Reentry footprint centre over the South Pacific as tracked by Roscosmos/NASA; exact debris location unknown. Shown as uncertain.",
+      "summary": "Phobos-Grunt, meant to return samples from Mars' moon Phobos, failed in Earth orbit and reentered over the Pacific in 2012.",
+      "narrative": [
+        "Phobos-Grunt launched in November 2011 to return samples from Phobos, Mars' moon, with China's Yinghuo-1 Mars orbiter aboard. Its engine failed in Earth orbit, and the spacecraft reentered Earth's atmosphere on 15 January 2012 over the South Pacific at about 32.7 degrees south, 161.1 degrees west.",
+        "The spacecraft burned up during reentry and was lost. The marker shows the approximate reentry footprint centre, labelled uncertain because no debris was recovered."
+      ],
+      "artifacts": [{ "name": "Phobos-Grunt / Yinghuo-1 spacecraft", "status": "Burned up on reentry — lost", "note": "Reentry footprint approximate." }],
+      "facts": [{ "label": "Reentry", "value": "15 January 2012" }, { "label": "Location", "value": "32.7 S, 161.1 W (approximate footprint)" }],
+      "images": [],
+      "keywords": ["Phobos-Grunt", "Yinghuo-1", "reentry", "2012", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Phobos-Grunt", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["earth-slc41", "mars-nozomi", "mars-mgs"]
+    }
+  ]
+}

@@ -9,13 +9,11 @@ export const INGESTED_DIR = path.join(DATA_DIR, 'ingested');
 export const PUBLIC_DATA_DIR = path.join(ROOT, 'public', 'data');
 
 const CATEGORY_IDS = new Set([
+  'abandoned',
   'launch',
+  'landing',
   'facility',
-  'crewed-landing',
-  'robotic-landing',
   'rover',
-  'impact',
-  'artifact',
 ]);
 const ACCURACY = new Set(['surveyed', 'mapped', 'approximate', 'uncertain']);
 const STATUS_KINDS = new Set(['success', 'partial', 'failure', 'ongoing', 'unknown']);

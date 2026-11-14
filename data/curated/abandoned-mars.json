@@ -1,0 +1,293 @@
+{
+  "sites": [
+    {
+      "id": "mars-6",
+      "body": "mars",
+      "name": "Mars 6 lander",
+      "siteName": "Margaritifer Terra, Samara Valles",
+      "mission": "Mars 6",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Soviet Mars program",
+      "date": "1974-03-12",
+      "status": "Mission failed — lander impacted Mars",
+      "statusKind": "failure",
+      "lat": -23.9,
+      "lon": -19.42,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Impact location published by NASA GISS Mars24 lander catalogue (19.42 W, 23.90 S); Soviet descent data ceased near the surface.",
+      "summary": "Mars 6 transmitted for 224 seconds during descent, then crashed at 23.9 S, 19.42 W in 1974 — its wreck is still in Samara Valles.",
+      "narrative": [
+        "Mars 6 launched in August 1973 as part of the Soviet Mars program. On 12 March 1974 it entered the atmosphere and transmitted for 224 seconds, but contact ceased just before the retrorockets were to fire, and the lander impacted at about 23.9 degrees south, 19.42 degrees west near Samara Valles.",
+        "The lander remains where it struck. NASA GISS Mars24 lists its impact coordinates, and the spacecraft is catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [{ "name": "Mars 6 lander", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "12 March 1974" }, { "label": "Location", "value": "23.9 S, 19.42 W (approximate)" }],
+      "images": [],
+      "keywords": ["Mars 6", "impact", "1974", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "Mars24 Sunclock — Mars Lander Missions", "publisher": "NASA GISS", "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html", "accessed": "2026-11-14" },
+        { "title": "NSSDCA Master Catalog — Mars 6", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-4", "mars-5", "mars-3"]
+    },
+    {
+      "id": "mars-4",
+      "body": "mars",
+      "name": "Mars 4",
+      "siteName": "Margaritifer Terra region",
+      "mission": "Mars 4",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Soviet Mars program",
+      "date": "1974-02-12",
+      "status": "Mission failed — spacecraft impacted Mars",
+      "statusKind": "failure",
+      "lat": -24.6,
+      "lon": -46.3,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Mars 4; the spacecraft failed to enter orbit and struck the surface.",
+      "summary": "Mars 4 was meant to orbit Mars and relay for the landers, but its engine failed and it crashed at 24.6 S, 46.3 W in 1974.",
+      "narrative": [
+        "Mars 4 launched in July 1973 to become Mars' first Soviet orbiter and relay data for the Mars 6 and 7 landers. Its main engine failed during the orbit-insertion burn on 12 February 1974, and the spacecraft impacted Mars at about 24.6 degrees south, 46.3 degrees west.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [{ "name": "Mars 4 spacecraft", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "12 February 1974" }, { "label": "Location", "value": "24.6 S, 46.3 W (approximate)" }],
+      "images": [],
+      "keywords": ["Mars 4", "impact", "1974", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Mars 4", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" },
+        { "title": "Mars24 Sunclock — Mars Lander Missions", "publisher": "NASA GISS", "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-5", "mars-6", "mars-3"]
+    },
+    {
+      "id": "mars-5",
+      "body": "mars",
+      "name": "Mars 5",
+      "siteName": "Margaritifer Terra region",
+      "mission": "Mars 5",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Soviet Mars program",
+      "date": "1974-02-15",
+      "status": "Mission failed — spacecraft impacted Mars",
+      "statusKind": "failure",
+      "lat": -1.05,
+      "lon": -46.55,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Mars 5; the spacecraft failed after a few days in orbit and struck the surface.",
+      "summary": "Mars 5 orbited Mars for only a few days in 1974 before failing and crashing at 1.05 S, 46.55 W.",
+      "narrative": [
+        "Mars 5 launched in July 1973 and entered Mars orbit on 12 February 1974. After a few days its systems failed, and on 15 February the spacecraft impacted Mars at about 1.05 degrees south, 46.55 degrees west.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [{ "name": "Mars 5 spacecraft", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "15 February 1974" }, { "label": "Location", "value": "1.05 S, 46.55 W (approximate)" }],
+      "images": [],
+      "keywords": ["Mars 5", "impact", "1974", "Soviet", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Mars 5", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" },
+        { "title": "Mars24 Sunclock — Mars Lander Missions", "publisher": "NASA GISS", "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-4", "mars-6", "mars-3"]
+    },
+    {
+      "id": "mars-viking-1-orbiter",
+      "body": "mars",
+      "name": "Viking 1 Orbiter",
+      "siteName": "Chryse Planitia region",
+      "mission": "Viking 1 Orbiter",
+      "program": "Viking",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Viking program",
+      "date": "1980-08-07",
+      "status": "Mission complete — orbiter intentionally impacted Mars",
+      "statusKind": "success",
+      "lat": 14.7,
+      "lon": -49.6,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Viking 1 Orbiter (14.7 N, 310.4 E); converted to -49.6 longitude.",
+      "summary": "After mapping Mars for four years, the Viking 1 Orbiter was crashed at 14.7 N, 49.6 W in 1980 to protect the surface.",
+      "narrative": [
+        "The Viking 1 Orbiter arrived at Mars in 1976 and mapped the planet for four years. As its propellant ran low, NASA intentionally impacted it on 7 August 1980 at about 14.7 degrees north, 49.6 degrees west, to avoid contaminating the surface.",
+        "The orbiter remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [{ "name": "Viking 1 Orbiter", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "7 August 1980" }, { "label": "Location", "value": "14.7 N, 49.6 W (approximate)" }],
+      "images": [],
+      "keywords": ["Viking 1 Orbiter", "impact", "1980", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Viking 1 Orbiter", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" },
+        { "title": "Mars24 Sunclock — Mars Lander Missions", "publisher": "NASA GISS", "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-viking-1", "mars-viking-2-orbiter", "mars-viking-2"]
+    },
+    {
+      "id": "mars-viking-2-orbiter",
+      "body": "mars",
+      "name": "Viking 2 Orbiter",
+      "siteName": "Utopia Planitia region",
+      "mission": "Viking 2 Orbiter",
+      "program": "Viking",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Viking program",
+      "date": "1978-07-25",
+      "status": "Mission complete — orbiter intentionally impacted Mars",
+      "statusKind": "success",
+      "lat": 27.3,
+      "lon": 139.9,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Viking 2 Orbiter (27.3 N, 139.9 E).",
+      "summary": "The Viking 2 Orbiter mapped Mars for two years, then was crashed at 27.3 N, 139.9 E in 1978.",
+      "narrative": [
+        "The Viking 2 Orbiter arrived at Mars in 1976 and mapped the planet for two years. On 25 July 1978 it was intentionally impacted at about 27.3 degrees north, 139.9 degrees east.",
+        "The orbiter remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [{ "name": "Viking 2 Orbiter", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "25 July 1978" }, { "label": "Location", "value": "27.3 N, 139.9 E (approximate)" }],
+      "images": [],
+      "keywords": ["Viking 2 Orbiter", "impact", "1978", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Viking 2 Orbiter", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" },
+        { "title": "Mars24 Sunclock — Mars Lander Missions", "publisher": "NASA GISS", "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-viking-2", "mars-viking-1-orbiter", "mars-viking-1"]
+    },
+    {
+      "id": "mars-nozomi",
+      "body": "mars",
+      "name": "Nozomi (Planet-B)",
+      "siteName": "Southern hemisphere region",
+      "mission": "Nozomi / Planet-B",
+      "agency": "ISAS / JAXA (Japan)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Japanese Mars mission",
+      "date": "2003-12-09",
+      "status": "Mission failed — spacecraft intentionally impacted Mars",
+      "statusKind": "failure",
+      "lat": -22.0,
+      "lon": 151.0,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Nozomi (22 S, 151 E).",
+      "summary": "Japan's Nozomi orbiter never reached Mars orbit and was crashed at 22 S, 151 E in 2003 after a five-year journey.",
+      "narrative": [
+        "Nozomi, Japan's first Mars mission, launched in 1998. After a difficult journey with gravity assists, it never entered Mars orbit, and on 9 December 2003 it was intentionally impacted at about 22 degrees south, 151 degrees east.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [{ "name": "Nozomi spacecraft", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "9 December 2003" }, { "label": "Location", "value": "22 S, 151 E (approximate)" }],
+      "images": [],
+      "keywords": ["Nozomi", "Planet-B", "impact", "2003", "Japan", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Nozomi", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-mgs", "mars-polar-lander", "mars-deep-space-2"]
+    },
+    {
+      "id": "mars-mgs",
+      "body": "mars",
+      "name": "Mars Global Surveyor",
+      "siteName": "Southern hemisphere region",
+      "mission": "Mars Global Surveyor",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Mars mapping mission",
+      "date": "2006-11-02",
+      "status": "Mission failed — spacecraft impacted Mars",
+      "statusKind": "failure",
+      "lat": -65.0,
+      "lon": 167.5,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Mars Global Surveyor (65 S, 167.5 E); contact was lost in 2006 and the spacecraft is thought to have impacted.",
+      "summary": "Mars Global Surveyor mapped Mars for a decade, went silent in 2006, and is thought to have crashed at 65 S, 167.5 E.",
+      "narrative": [
+        "Mars Global Surveyor arrived at Mars in 1997 and mapped the planet in unprecedented detail for nearly a decade. Contact was lost on 2 November 2006, and the spacecraft is thought to have impacted Mars at about 65 degrees south, 167.5 degrees east.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [{ "name": "Mars Global Surveyor spacecraft", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "2 November 2006 (estimated)" }, { "label": "Location", "value": "65 S, 167.5 E (approximate)" }],
+      "images": [],
+      "keywords": ["Mars Global Surveyor", "MGS", "impact", "2006", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NSSDCA Master Catalog — Mars Global Surveyor", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-nozomi", "mars-viking-1-orbiter", "mars-insight"]
+    },
+    {
+      "id": "mars-deep-space-2",
+      "body": "mars",
+      "name": "Deep Space 2 microprobes",
+      "siteName": "Planum Australe",
+      "mission": "Deep Space 2",
+      "program": "New Millennium",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted microprobes — Mars penetrator mission",
+      "date": "1999-12-03",
+      "status": "Mission failed — microprobes impacted Mars",
+      "statusKind": "failure",
+      "lat": -75.0,
+      "lon": -163.5,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Impact location published by NASA GISS Mars24 lander catalogue (75 S, 163.5 W); no signal was received from the microprobes.",
+      "summary": "Deep Space 2's two microprobes were meant to penetrate the south polar cap in 1999 — they hit at 75 S, 163.5 W and never answered.",
+      "narrative": [
+        "Deep Space 2 carried two microprobes aboard Mars Polar Lander to penetrate the Martian south polar cap. On 3 December 1999 the microprobes separated and impacted at about 75 degrees south, 163.5 degrees west in Planum Australe, but no signal was ever received.",
+        "The microprobes remain where they struck, listed by NASA GISS Mars24 alongside Mars Polar Lander."
+      ],
+      "artifacts": [{ "name": "Deep Space 2 microprobes (2)", "status": "Impacted — remains on surface" }],
+      "facts": [{ "label": "Impact", "value": "3 December 1999" }, { "label": "Location", "value": "75 S, 163.5 W (approximate)" }],
+      "images": [],
+      "keywords": ["Deep Space 2", "microprobes", "impact", "1999", "abandoned spacecraft"],
+      "sources": [
+        { "title": "Mars24 Sunclock — Mars Lander Missions", "publisher": "NASA GISS", "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-polar-lander", "mars-phoenix", "mars-schiaparelli"]
+    },
+    {
+      "id": "mars-ingenuity",
+      "body": "mars",
+      "name": "Ingenuity helicopter wreck",
+      "siteName": "Jezero Crater",
+      "mission": "Mars 2020 / Ingenuity",
+      "program": "Mars 2020",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Rotorcraft wreck — first powered flight on another planet",
+      "date": "2024-01-25",
+      "status": "Mission complete — helicopter wreck remains on surface",
+      "statusKind": "success",
+      "lat": 18.535,
+      "lon": 77.447,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "mapped",
+      "coordNote": "Final landing location published by NASA for Ingenuity's 72nd flight in Jezero Crater; wreck imaged by Perseverance.",
+      "summary": "Ingenuity made 72 flights on Mars, then crashed in Jezero Crater in 2024 — its wreck sits at 18.535 N, 77.447 E.",
+      "narrative": [
+        "Ingenuity arrived at Mars aboard Perseverance in February 2021 and became the first powered, controlled flight on another planet. It flew 72 times, scouting ahead of the rover.",
+        "On its 72nd flight on 25 January 2024, Ingenuity's rotor blades were damaged and it made a hard landing in Jezero Crater at 18.535 degrees north, 77.447 degrees east. Perseverance imaged the wreck, which remains on the surface as the first aircraft wreck on another planet."
+      ],
+      "artifacts": [{ "name": "Ingenuity helicopter", "status": "Wreck — remains on surface", "note": "Imaged by Perseverance." }],
+      "facts": [{ "label": "Final flight", "value": "25 January 2024 (Flight 72)" }, { "label": "Location", "value": "18.535 N, 77.447 E" }, { "label": "Flights", "value": "72 flights" }],
+      "images": [],
+      "keywords": ["Ingenuity", "helicopter", "Jezero", "2024", "abandoned spacecraft"],
+      "sources": [
+        { "title": "NASA Mars 2020 — Ingenuity Helicopter", "publisher": "NASA", "url": "https://mars.nasa.gov/mars2020/spacecraft/rover/helicopter/", "accessed": "2026-11-14" },
+        { "title": "Mars24 Sunclock — Mars Lander Missions", "publisher": "NASA GISS", "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html", "accessed": "2026-11-14" }
+      ],
+      "related": ["mars-perseverance", "mars-curiosity", "mars-zhurong"]
+    }
+  ]
+}

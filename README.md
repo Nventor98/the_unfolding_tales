@@ -12,7 +12,7 @@ space-agency) sources; where the record is uncertain the product says so rather 
 guessing.
 
 ```
- 99 records · 4 bodies · 88 unique source pages · 1917–2025
+ 150 records · 4 bodies · 92 unique source pages · 1917–2025
 ```
 
 ---
@@ -23,9 +23,9 @@ guessing.
   camera moves, like Radio Garden, so a marker never drifts off its real coordinate.
 - **Switch bodies.** Earth, the Moon, Mars and Venus, each with its own texture, atmosphere
   and site inventory.
-- **Read the markers by kind.** Launch · facility · crewed landing · robotic landing · rover ·
-  impact · left-behind artefact. Each category has its own colour and shape language, and the
-  legend doubles as a filter.
+- **Read the markers by kind.** Abandoned (red) · Launch (orange) · Landing (sky blue) ·
+  Facility (teal) · Active rover (green). Each category has its own colour, and the
+  legend doubles as a filter. Forgotten/abandoned spacecraft are always red.
 - **Open a site.** The panel gives the mission, the date, the coordinates in both −180…180 and
   0…360°E form, the reference frame and its accuracy class, the historical narrative, the
   equipment inventory, mission status, and the primary sources for every claim.
@@ -103,7 +103,7 @@ context, and browsers only grant `speechSynthesis` there.
 
 ```
 data/taxonomy.json          bodies, categories, colours, intro copy
-data/curated/*.json         99 hand-curated records (4 files)
+data/curated/*.json         150 hand-curated records (7 files)
 data/ingested/*.json        machine-readable NASA source tables (snapshots)
         │
         ├─ scripts/validate-dataset.mjs   schema + duplicate + coordinate checks
@@ -126,7 +126,7 @@ curated file and rebuilding; adding a body is a matter of extending `data/taxono
 | `id` | stable, kebab-case, body-prefixed (`moon-apollo-11`, `earth-lc39a`) |
 | `body` | `earth` · `moon` · `mars` · `venus` |
 | `name`, `siteName`, `mission`, `program`, `agency` | what it is and who did it |
-| `category` | `launch` · `facility` · `crewed-landing` · `robotic-landing` · `rover` · `impact` · `artifact` |
+| `category` | `abandoned` (red #ff2222) · `launch` (orange #ffb057) · `landing` (sky blue #4fc3ff) · `facility` (teal #5fe7d8) · `rover` (green #7dffa8) |
 | `categoryDetail` | free-text refinement ("Saturn V pad", "LM ascent stage impact") |
 | `date`, `dateNote` | ISO date (or year) and any precision caveat |
 | `status`, `statusKind` | plain-language outcome · `success`/`partial`/`failure`/`ongoing`/`unknown` |

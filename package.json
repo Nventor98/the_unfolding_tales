@@ -8,13 +8,13 @@
     "dev": "vite",
     "build": "npm run data:build && tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "data:build": "node scripts/build-dataset.mjs",
-    "data:validate": "node scripts/validate-dataset.mjs",
-    "data:stats": "node scripts/build-dataset.mjs --stats",
-    "ingest": "node scripts/ingest/run-all.mjs",
-    "ingest:moon": "node scripts/ingest/nssdca-moon.mjs",
-    "ingest:mars": "node scripts/ingest/giss-mars24.mjs",
-    "data:images": "node scripts/ingest/nasa-images.mjs"
+    "data:build": "node script/build-dataset.mjs",
+    "data:validate": "node script/validate-dataset.mjs",
+    "data:stats": "node script/build-dataset.mjs --stats",
+    "ingest": "node script/ingest/run-all.mjs",
+    "ingest:moon": "node script/ingest/nssdca-moon.mjs",
+    "ingest:mars": "node script/ingest/giss-mars24.mjs",
+    "data:images": "node script/ingest/nasa-images.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

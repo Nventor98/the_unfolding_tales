@@ -2,9 +2,9 @@
   "meta": {
     "title": "Abandoned but Not Forgotten",
     "subtitle": "An interactive archive of human exploration sites beyond Earth",
-    "version": "1.0.0",
-    "builtAt": "2026-11-06T12:48:44.872Z",
-    "recordCount": 99,
+    "version": "1.1.0",
+    "builtAt": "2026-11-14T16:20:41.969Z",
+    "recordCount": 150,
     "license": "Historical text CC BY 4.0. Historical imagery remains the property of NASA and the credited institutions.",
     "methodology": "Every record is transcribed from a named NASA or peer-reviewed source. Coordinates are stored as published (degrees east, -180…180) and cross-checked against machine-readable snapshots of the source tables in data/ingested."
   },
@@ -106,83 +106,75 @@
   ],
   "categories": [
     {
+      "id": "abandoned",
+      "label": "Abandoned / forgotten spacecraft",
+      "short": "Abandoned",
+      "color": "#ff2222",
+      "description": "Spacecraft left behind on the Moon, Mars or Venus — landed, crashed, stopped rovers and impacted orbiters. Shown in red."
+    },
+    {
       "id": "launch",
-      "label": "Launch site",
+      "label": "Launch site (rocket take-off)",
       "short": "Launch",
       "color": "#ffb057",
-      "description": "Where a mission left Earth. Pads, complexes and the concrete that survived them."
+      "description": "Where a mission left Earth. Pads, complexes and the concrete that survived them. Shown in orange."
+    },
+    {
+      "id": "landing",
+      "label": "Landing location",
+      "short": "Landing",
+      "color": "#4fc3ff",
+      "description": "Successful touchdown points for crewed Apollo landings and still-operating landers. Shown in sky blue."
     },
     {
       "id": "facility",
       "label": "Facility or ground station",
       "short": "Facility",
       "color": "#5fe7d8",
-      "description": "Centres where missions were built, tested, flown or listened to."
-    },
-    {
-      "id": "crewed-landing",
-      "label": "Crewed landing site",
-      "short": "Crewed landing",
-      "color": "#8ef2ff",
-      "description": "Places where astronauts landed and left their descent stages behind."
-    },
-    {
-      "id": "robotic-landing",
-      "label": "Robotic landing site",
-      "short": "Robotic landing",
-      "color": "#b39bff",
-      "description": "Uncrewed landers that arrived in one piece — or nearly did."
+      "description": "Centres where missions were built, tested, flown or listened to. Shown in teal."
     },
     {
       "id": "rover",
-      "label": "Rover site",
-      "short": "Rover",
+      "label": "Active rover",
+      "short": "Active rover",
       "color": "#7dffa8",
-      "description": "Where mobile machines worked, stopped, or are still driving."
-    },
-    {
-      "id": "impact",
-      "label": "Impact or crash site",
-      "short": "Impact",
-      "color": "#ff7078",
-      "description": "Spacecraft, spent stages and probes that struck a surface by design or by accident."
-    },
-    {
-      "id": "artifact",
-      "label": "Artifact left behind",
-      "short": "Artifact",
-      "color": "#ff9ee0",
-      "description": "Equipment that was deployed, discarded or deliberately abandoned and is still there."
+      "description": "Rovers still operating on Mars. Shown in green. Stopped rovers are classified as abandoned (red)."
     }
   ],
   "stats": {
-    "total": 99,
+    "total": 150,
     "byBody": {
-      "earth": 23,
-      "moon": 56,
-      "mars": 15,
-      "venus": 5
+      "earth": 24,
+      "moon": 80,
+      "mars": 24,
+      "venus": 22
     },
     "byCategory": {
+      "abandoned": 117,
       "launch": 10,
+      "landing": 8,
       "facility": 13,
-      "crewed-landing": 6,
-      "robotic-landing": 25,
-      "rover": 7,
-      "impact": 37,
-      "artifact": 1
+      "rover": 2
     },
     "byAgency": {
-      "NASA": 70,
+      "NASA": 81,
       "NASA / US Army": 1,
       "NASA / JPL": 1,
       "CSIRO (Australia) / NASA": 1,
       "NASA (operated with Australia)": 1,
       "NASA / SpaceX": 1,
-      "Soviet Union": 15,
+      "Roscosmos (Russia) / CNSA (China)": 1,
+      "Soviet Union": 36,
+      "ISAS / JAXA (Japan)": 2,
       "ESA / United Kingdom": 1,
       "ESA / Roscosmos": 1,
       "CNSA": 2,
+      "ESA": 1,
+      "JAXA (Japan)": 3,
+      "CNSA (China)": 8,
+      "SpaceIL (Israel)": 1,
+      "ISRO (India)": 1,
+      "ispace (Japan)": 2,
       "Roscosmos": 1,
       "ISRO": 1,
       "NASA / Intuitive Machines": 2,
@@ -193,16 +185,17 @@
       "1930s": 2,
       "1940s": 1,
       "1950s": 3,
-      "1960s": 35,
-      "1970s": 31,
-      "1990s": 4,
-      "2010s": 9,
-      "2000s": 6,
-      "2020s": 7
+      "1960s": 46,
+      "1970s": 42,
+      "1990s": 8,
+      "2010s": 16,
+      "1980s": 5,
+      "2000s": 12,
+      "2020s": 14
     },
     "withImages": 11,
-    "withVerification": 76,
-    "uniqueSources": 88,
+    "withVerification": 100,
+    "uniqueSources": 92,
     "yearRange": [
       1917,
       2025
@@ -1797,6 +1790,67 @@
       ]
     },
     {
+      "id": "earth-phobos-grunt",
+      "body": "earth",
+      "name": "Phobos-Grunt / Yinghuo-1 reentry",
+      "siteName": "South Pacific Ocean",
+      "mission": "Phobos-Grunt / Yinghuo-1",
+      "agency": "Roscosmos (Russia) / CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Reentered spacecraft — failed Mars mission",
+      "date": "2012-01-15",
+      "status": "Mission failed — spacecraft reentered Earth and was lost",
+      "statusKind": "failure",
+      "lat": -32.7,
+      "lon": -161.1,
+      "coordSystem": "WGS 84 geographic (latitude, longitude east of Greenwich)",
+      "coordAccuracy": "uncertain",
+      "coordNote": "Reentry footprint centre over the South Pacific as tracked by Roscosmos/NASA; exact debris location unknown. Shown as uncertain.",
+      "summary": "Phobos-Grunt, meant to return samples from Mars' moon Phobos, failed in Earth orbit and reentered over the Pacific in 2012.",
+      "narrative": [
+        "Phobos-Grunt launched in November 2011 to return samples from Phobos, Mars' moon, with China's Yinghuo-1 Mars orbiter aboard. Its engine failed in Earth orbit, and the spacecraft reentered Earth's atmosphere on 15 January 2012 over the South Pacific at about 32.7 degrees south, 161.1 degrees west.",
+        "The spacecraft burned up during reentry and was lost. The marker shows the approximate reentry footprint centre, labelled uncertain because no debris was recovered."
+      ],
+      "artifacts": [
+        {
+          "name": "Phobos-Grunt / Yinghuo-1 spacecraft",
+          "status": "Burned up on reentry — lost",
+          "note": "Reentry footprint approximate."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Reentry",
+          "value": "15 January 2012"
+        },
+        {
+          "label": "Location",
+          "value": "32.7 S, 161.1 W (approximate footprint)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Phobos-Grunt",
+        "Yinghuo-1",
+        "reentry",
+        "2012",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Phobos-Grunt",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "earth-slc41",
+        "mars-nozomi",
+        "mars-mgs"
+      ]
+    },
+    {
       "id": "earth-slc3e",
       "body": "earth",
       "name": "Vandenberg Space Launch Complex 3E",
@@ -1874,7 +1928,7 @@
       "mission": "Mars 2 (USSR)",
       "program": "Mars programme",
       "agency": "Soviet Union",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Failed lander — crashed during descent",
       "date": "1971-11-27",
       "status": "Crashed",
@@ -1941,7 +1995,7 @@
       "mission": "Mars 3 (USSR)",
       "program": "Mars programme",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Lander — first soft landing on Mars, 20 seconds of data",
       "date": "1971-12-02",
       "status": "Landed successfully; transmissions ceased after about 20 seconds",
@@ -2007,6 +2061,204 @@
       ]
     },
     {
+      "id": "mars-4",
+      "body": "mars",
+      "name": "Mars 4",
+      "siteName": "Margaritifer Terra region",
+      "mission": "Mars 4",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Soviet Mars program",
+      "date": "1974-02-12",
+      "status": "Mission failed — spacecraft impacted Mars",
+      "statusKind": "failure",
+      "lat": -24.6,
+      "lon": -46.3,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Mars 4; the spacecraft failed to enter orbit and struck the surface.",
+      "summary": "Mars 4 was meant to orbit Mars and relay for the landers, but its engine failed and it crashed at 24.6 S, 46.3 W in 1974.",
+      "narrative": [
+        "Mars 4 launched in July 1973 to become Mars' first Soviet orbiter and relay data for the Mars 6 and 7 landers. Its main engine failed during the orbit-insertion burn on 12 February 1974, and the spacecraft impacted Mars at about 24.6 degrees south, 46.3 degrees west.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [
+        {
+          "name": "Mars 4 spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "12 February 1974"
+        },
+        {
+          "label": "Location",
+          "value": "24.6 S, 46.3 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Mars 4",
+        "impact",
+        "1974",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Mars 4",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Mars24 Sunclock — Mars Lander Missions",
+          "publisher": "NASA GISS",
+          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-5",
+        "mars-6",
+        "mars-3"
+      ]
+    },
+    {
+      "id": "mars-5",
+      "body": "mars",
+      "name": "Mars 5",
+      "siteName": "Margaritifer Terra region",
+      "mission": "Mars 5",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Soviet Mars program",
+      "date": "1974-02-15",
+      "status": "Mission failed — spacecraft impacted Mars",
+      "statusKind": "failure",
+      "lat": -1.05,
+      "lon": -46.55,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Mars 5; the spacecraft failed after a few days in orbit and struck the surface.",
+      "summary": "Mars 5 orbited Mars for only a few days in 1974 before failing and crashing at 1.05 S, 46.55 W.",
+      "narrative": [
+        "Mars 5 launched in July 1973 and entered Mars orbit on 12 February 1974. After a few days its systems failed, and on 15 February the spacecraft impacted Mars at about 1.05 degrees south, 46.55 degrees west.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [
+        {
+          "name": "Mars 5 spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "15 February 1974"
+        },
+        {
+          "label": "Location",
+          "value": "1.05 S, 46.55 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Mars 5",
+        "impact",
+        "1974",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Mars 5",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Mars24 Sunclock — Mars Lander Missions",
+          "publisher": "NASA GISS",
+          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-4",
+        "mars-6",
+        "mars-3"
+      ]
+    },
+    {
+      "id": "mars-6",
+      "body": "mars",
+      "name": "Mars 6 lander",
+      "siteName": "Margaritifer Terra, Samara Valles",
+      "mission": "Mars 6",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Soviet Mars program",
+      "date": "1974-03-12",
+      "status": "Mission failed — lander impacted Mars",
+      "statusKind": "failure",
+      "lat": -23.9,
+      "lon": -19.42,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Impact location published by NASA GISS Mars24 lander catalogue (19.42 W, 23.90 S); Soviet descent data ceased near the surface.",
+      "summary": "Mars 6 transmitted for 224 seconds during descent, then crashed at 23.9 S, 19.42 W in 1974 — its wreck is still in Samara Valles.",
+      "narrative": [
+        "Mars 6 launched in August 1973 as part of the Soviet Mars program. On 12 March 1974 it entered the atmosphere and transmitted for 224 seconds, but contact ceased just before the retrorockets were to fire, and the lander impacted at about 23.9 degrees south, 19.42 degrees west near Samara Valles.",
+        "The lander remains where it struck. NASA GISS Mars24 lists its impact coordinates, and the spacecraft is catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [
+        {
+          "name": "Mars 6 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "12 March 1974"
+        },
+        {
+          "label": "Location",
+          "value": "23.9 S, 19.42 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Mars 6",
+        "impact",
+        "1974",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Mars24 Sunclock — Mars Lander Missions",
+          "publisher": "NASA GISS",
+          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "NSSDCA Master Catalog — Mars 6",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-4",
+        "mars-5",
+        "mars-3"
+      ]
+    },
+    {
       "id": "mars-viking-1",
       "body": "mars",
       "name": "Viking 1 Lander — Thomas Mutch Memorial Station",
@@ -2014,7 +2266,7 @@
       "mission": "Viking 1",
       "program": "Viking",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Stationary lander — first successful Mars landing",
       "date": "1976-07-20",
       "status": "Mission ended 13 November 1982 — lander remains",
@@ -2116,7 +2368,7 @@
       "mission": "Viking 2",
       "program": "Viking",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Stationary lander — northern plains",
       "date": "1976-09-03",
       "status": "Mission ended 11 April 1980 — lander remains",
@@ -2182,6 +2434,138 @@
       ]
     },
     {
+      "id": "mars-viking-2-orbiter",
+      "body": "mars",
+      "name": "Viking 2 Orbiter",
+      "siteName": "Utopia Planitia region",
+      "mission": "Viking 2 Orbiter",
+      "program": "Viking",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Viking program",
+      "date": "1978-07-25",
+      "status": "Mission complete — orbiter intentionally impacted Mars",
+      "statusKind": "success",
+      "lat": 27.3,
+      "lon": 139.9,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Viking 2 Orbiter (27.3 N, 139.9 E).",
+      "summary": "The Viking 2 Orbiter mapped Mars for two years, then was crashed at 27.3 N, 139.9 E in 1978.",
+      "narrative": [
+        "The Viking 2 Orbiter arrived at Mars in 1976 and mapped the planet for two years. On 25 July 1978 it was intentionally impacted at about 27.3 degrees north, 139.9 degrees east.",
+        "The orbiter remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [
+        {
+          "name": "Viking 2 Orbiter",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "25 July 1978"
+        },
+        {
+          "label": "Location",
+          "value": "27.3 N, 139.9 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Viking 2 Orbiter",
+        "impact",
+        "1978",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Viking 2 Orbiter",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Mars24 Sunclock — Mars Lander Missions",
+          "publisher": "NASA GISS",
+          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-viking-2",
+        "mars-viking-1-orbiter",
+        "mars-viking-1"
+      ]
+    },
+    {
+      "id": "mars-viking-1-orbiter",
+      "body": "mars",
+      "name": "Viking 1 Orbiter",
+      "siteName": "Chryse Planitia region",
+      "mission": "Viking 1 Orbiter",
+      "program": "Viking",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Viking program",
+      "date": "1980-08-07",
+      "status": "Mission complete — orbiter intentionally impacted Mars",
+      "statusKind": "success",
+      "lat": 14.7,
+      "lon": -49.6,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Viking 1 Orbiter (14.7 N, 310.4 E); converted to -49.6 longitude.",
+      "summary": "After mapping Mars for four years, the Viking 1 Orbiter was crashed at 14.7 N, 49.6 W in 1980 to protect the surface.",
+      "narrative": [
+        "The Viking 1 Orbiter arrived at Mars in 1976 and mapped the planet for four years. As its propellant ran low, NASA intentionally impacted it on 7 August 1980 at about 14.7 degrees north, 49.6 degrees west, to avoid contaminating the surface.",
+        "The orbiter remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [
+        {
+          "name": "Viking 1 Orbiter",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "7 August 1980"
+        },
+        {
+          "label": "Location",
+          "value": "14.7 N, 49.6 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Viking 1 Orbiter",
+        "impact",
+        "1980",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Viking 1 Orbiter",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Mars24 Sunclock — Mars Lander Missions",
+          "publisher": "NASA GISS",
+          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-viking-1",
+        "mars-viking-2-orbiter",
+        "mars-viking-2"
+      ]
+    },
+    {
       "id": "mars-pathfinder",
       "body": "mars",
       "name": "Mars Pathfinder and Sojourner — Carl Sagan Memorial Station",
@@ -2189,7 +2573,7 @@
       "mission": "Mars Pathfinder",
       "program": "Discovery / Mars Surveyor",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Lander and first Mars rover",
       "date": "1997-07-04",
       "status": "Last contact 7 October 1997 — lander and rover remain",
@@ -2262,6 +2646,67 @@
       "featured": true
     },
     {
+      "id": "mars-deep-space-2",
+      "body": "mars",
+      "name": "Deep Space 2 microprobes",
+      "siteName": "Planum Australe",
+      "mission": "Deep Space 2",
+      "program": "New Millennium",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted microprobes — Mars penetrator mission",
+      "date": "1999-12-03",
+      "status": "Mission failed — microprobes impacted Mars",
+      "statusKind": "failure",
+      "lat": -75,
+      "lon": -163.5,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Impact location published by NASA GISS Mars24 lander catalogue (75 S, 163.5 W); no signal was received from the microprobes.",
+      "summary": "Deep Space 2's two microprobes were meant to penetrate the south polar cap in 1999 — they hit at 75 S, 163.5 W and never answered.",
+      "narrative": [
+        "Deep Space 2 carried two microprobes aboard Mars Polar Lander to penetrate the Martian south polar cap. On 3 December 1999 the microprobes separated and impacted at about 75 degrees south, 163.5 degrees west in Planum Australe, but no signal was ever received.",
+        "The microprobes remain where they struck, listed by NASA GISS Mars24 alongside Mars Polar Lander."
+      ],
+      "artifacts": [
+        {
+          "name": "Deep Space 2 microprobes (2)",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "3 December 1999"
+        },
+        {
+          "label": "Location",
+          "value": "75 S, 163.5 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Deep Space 2",
+        "microprobes",
+        "impact",
+        "1999",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Mars24 Sunclock — Mars Lander Missions",
+          "publisher": "NASA GISS",
+          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-polar-lander",
+        "mars-phoenix",
+        "mars-schiaparelli"
+      ]
+    },
+    {
       "id": "mars-polar-lander",
       "body": "mars",
       "name": "Mars Polar Lander crash site",
@@ -2269,7 +2714,7 @@
       "mission": "Mars Polar Lander",
       "program": "Mars Surveyor 98",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Failed lander — likely engine shutdown too early",
       "date": "1999-12-03",
       "status": "Lost during descent — wreckage remains",
@@ -2335,6 +2780,67 @@
       ]
     },
     {
+      "id": "mars-nozomi",
+      "body": "mars",
+      "name": "Nozomi (Planet-B)",
+      "siteName": "Southern hemisphere region",
+      "mission": "Nozomi / Planet-B",
+      "agency": "ISAS / JAXA (Japan)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Japanese Mars mission",
+      "date": "2003-12-09",
+      "status": "Mission failed — spacecraft intentionally impacted Mars",
+      "statusKind": "failure",
+      "lat": -22,
+      "lon": 151,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Nozomi (22 S, 151 E).",
+      "summary": "Japan's Nozomi orbiter never reached Mars orbit and was crashed at 22 S, 151 E in 2003 after a five-year journey.",
+      "narrative": [
+        "Nozomi, Japan's first Mars mission, launched in 1998. After a difficult journey with gravity assists, it never entered Mars orbit, and on 9 December 2003 it was intentionally impacted at about 22 degrees south, 151 degrees east.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [
+        {
+          "name": "Nozomi spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "9 December 2003"
+        },
+        {
+          "label": "Location",
+          "value": "22 S, 151 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Nozomi",
+        "Planet-B",
+        "impact",
+        "2003",
+        "Japan",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Nozomi",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-mgs",
+        "mars-polar-lander",
+        "mars-deep-space-2"
+      ]
+    },
+    {
       "id": "mars-beagle-2",
       "body": "mars",
       "name": "Beagle 2",
@@ -2342,7 +2848,7 @@
       "mission": "Beagle 2 (Mars Express)",
       "program": "ESA Mars Express",
       "agency": "ESA / United Kingdom",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Lander — landed intact but never deployed",
       "date": "2003-12-25",
       "status": "Silent — found intact in 2015 orbital images",
@@ -2420,7 +2926,7 @@
       "mission": "Mars Exploration Rover Spirit",
       "program": "Mars Exploration Rover",
       "agency": "NASA",
-      "category": "rover",
+      "category": "abandoned",
       "categoryDetail": "Rover — six years in Gusev, finally stuck",
       "date": "2004-01-04",
       "status": "Mission ended 22 March 2010 — rover remains in place",
@@ -2500,7 +3006,7 @@
       "mission": "Mars Exploration Rover Opportunity",
       "program": "Mars Exploration Rover",
       "agency": "NASA",
-      "category": "rover",
+      "category": "abandoned",
       "categoryDetail": "Rover — 45 km and 14 years, stopped by a global dust storm",
       "date": "2004-01-25",
       "status": "Mission ended 13 February 2019 — rover remains in Perseverance Valley",
@@ -2588,6 +3094,66 @@
       "featured": true
     },
     {
+      "id": "mars-mgs",
+      "body": "mars",
+      "name": "Mars Global Surveyor",
+      "siteName": "Southern hemisphere region",
+      "mission": "Mars Global Surveyor",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Mars mapping mission",
+      "date": "2006-11-02",
+      "status": "Mission failed — spacecraft impacted Mars",
+      "statusKind": "failure",
+      "lat": -65,
+      "lon": 167.5,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Mars Global Surveyor (65 S, 167.5 E); contact was lost in 2006 and the spacecraft is thought to have impacted.",
+      "summary": "Mars Global Surveyor mapped Mars for a decade, went silent in 2006, and is thought to have crashed at 65 S, 167.5 E.",
+      "narrative": [
+        "Mars Global Surveyor arrived at Mars in 1997 and mapped the planet in unprecedented detail for nearly a decade. Contact was lost on 2 November 2006, and the spacecraft is thought to have impacted Mars at about 65 degrees south, 167.5 degrees east.",
+        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
+      ],
+      "artifacts": [
+        {
+          "name": "Mars Global Surveyor spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "2 November 2006 (estimated)"
+        },
+        {
+          "label": "Location",
+          "value": "65 S, 167.5 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Mars Global Surveyor",
+        "MGS",
+        "impact",
+        "2006",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Mars Global Surveyor",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-nozomi",
+        "mars-viking-1-orbiter",
+        "mars-insight"
+      ]
+    },
+    {
       "id": "mars-phoenix",
       "body": "mars",
       "name": "Phoenix Lander",
@@ -2595,7 +3161,7 @@
       "mission": "Phoenix",
       "program": "Mars Scout",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Stationary lander — polar water ice",
       "date": "2008-05-25",
       "status": "Mission ended 2 November 2008 — lander remains, likely damaged by ice",
@@ -2755,7 +3321,7 @@
       "mission": "ExoMars 2016 Schiaparelli",
       "program": "ESA ExoMars",
       "agency": "ESA / Roscosmos",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Failed lander — parachute and retrorockets released early",
       "date": "2016-10-19",
       "status": "Crashed at high speed",
@@ -2828,7 +3394,7 @@
       "mission": "InSight",
       "program": "Discovery",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Stationary lander — seismology and interior structure",
       "date": "2018-11-26",
       "status": "Mission ended 21 December 2022 — lander remains",
@@ -3013,7 +3579,7 @@
       "mission": "Tianwen-1 (Zhurong)",
       "program": "Tianwen",
       "agency": "CNSA",
-      "category": "rover",
+      "category": "abandoned",
       "categoryDetail": "Rover — dormant since 2022",
       "date": "2021-05-15",
       "status": "Hibernating since May 2022; contact not re-established",
@@ -3078,6 +3644,78 @@
       ]
     },
     {
+      "id": "mars-ingenuity",
+      "body": "mars",
+      "name": "Ingenuity helicopter wreck",
+      "siteName": "Jezero Crater",
+      "mission": "Mars 2020 / Ingenuity",
+      "program": "Mars 2020",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Rotorcraft wreck — first powered flight on another planet",
+      "date": "2024-01-25",
+      "status": "Mission complete — helicopter wreck remains on surface",
+      "statusKind": "success",
+      "lat": 18.535,
+      "lon": 77.447,
+      "coordSystem": "IAU planetocentric areographic, east longitude",
+      "coordAccuracy": "mapped",
+      "coordNote": "Final landing location published by NASA for Ingenuity's 72nd flight in Jezero Crater; wreck imaged by Perseverance.",
+      "summary": "Ingenuity made 72 flights on Mars, then crashed in Jezero Crater in 2024 — its wreck sits at 18.535 N, 77.447 E.",
+      "narrative": [
+        "Ingenuity arrived at Mars aboard Perseverance in February 2021 and became the first powered, controlled flight on another planet. It flew 72 times, scouting ahead of the rover.",
+        "On its 72nd flight on 25 January 2024, Ingenuity's rotor blades were damaged and it made a hard landing in Jezero Crater at 18.535 degrees north, 77.447 degrees east. Perseverance imaged the wreck, which remains on the surface as the first aircraft wreck on another planet."
+      ],
+      "artifacts": [
+        {
+          "name": "Ingenuity helicopter",
+          "status": "Wreck — remains on surface",
+          "note": "Imaged by Perseverance."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Final flight",
+          "value": "25 January 2024 (Flight 72)"
+        },
+        {
+          "label": "Location",
+          "value": "18.535 N, 77.447 E"
+        },
+        {
+          "label": "Flights",
+          "value": "72 flights"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Ingenuity",
+        "helicopter",
+        "Jezero",
+        "2024",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NASA Mars 2020 — Ingenuity Helicopter",
+          "publisher": "NASA",
+          "url": "https://mars.nasa.gov/mars2020/spacecraft/rover/helicopter/",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Mars24 Sunclock — Mars Lander Missions",
+          "publisher": "NASA GISS",
+          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "mars-perseverance",
+        "mars-curiosity",
+        "mars-zhurong"
+      ]
+    },
+    {
       "id": "moon-luna-2",
       "body": "moon",
       "name": "Luna 2 impact site",
@@ -3085,7 +3723,7 @@
       "mission": "Luna 2",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Impactor — first human object to reach the Moon",
       "date": "1959-09-13",
       "status": "Crashed as designed",
@@ -3148,6 +3786,77 @@
       ]
     },
     {
+      "id": "moon-ranger-3",
+      "body": "moon",
+      "name": "Ranger 3",
+      "siteName": "Mare Cognitum region",
+      "mission": "Ranger 3",
+      "program": "Ranger",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted spacecraft — Ranger series",
+      "date": "1962-01-28",
+      "status": "Mission failed — spacecraft impacted the Moon",
+      "statusKind": "failure",
+      "lat": 10.4,
+      "lon": -20.2,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table; not imaged by LROC.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Ranger 3"
+      },
+      "summary": "The first Ranger to reach the Moon — it missed its target by 370 km and struck the surface without returning close-up pictures.",
+      "narrative": [
+        "Ranger 3 launched on 26 January 1962 to photograph the lunar surface before impact. A guidance error sent it 370 km past its aim point, and on 28 January it struck the Moon at about 10.4 degrees north, 20.2 degrees west, without returning useful images.",
+        "The spacecraft remains where it struck, buried or scattered in the impact debris. It is listed in NASA's Catalogue of Manmade Material on the Moon and the NSSDCA Table of Anthropogenic Impacts, which records its approximate impact coordinates."
+      ],
+      "artifacts": [
+        {
+          "name": "Ranger 3 spacecraft",
+          "status": "Impacted — remains on surface",
+          "note": "Approximate location; not imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "28 January 1962"
+        },
+        {
+          "label": "Location",
+          "value": "10.4 N, 20.2 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Ranger 3",
+        "impact",
+        "1962",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Catalogue of Manmade Material on the Moon",
+          "publisher": "NASA History Program Office",
+          "url": "https://www.nasa.gov/wp-content/uploads/2024/02/final-catalogue-of-manmade-material-on-the-moon.pdf",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-ranger-4",
+        "moon-ranger-5",
+        "moon-ranger-7"
+      ]
+    },
+    {
       "id": "moon-ranger-4",
       "body": "moon",
       "name": "Ranger 4 impact site",
@@ -3155,7 +3864,7 @@
       "mission": "Ranger 4",
       "program": "Ranger",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Impactor — first US spacecraft to reach another body",
       "date": "1962-04-26",
       "status": "Crashed; no data returned",
@@ -3212,6 +3921,76 @@
       ]
     },
     {
+      "id": "moon-ranger-5",
+      "body": "moon",
+      "name": "Ranger 5",
+      "siteName": "Mare Tranquillitatis region",
+      "mission": "Ranger 5",
+      "program": "Ranger",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted spacecraft — Ranger series",
+      "date": "1962-06-21",
+      "status": "Mission failed — spacecraft impacted the Moon",
+      "statusKind": "failure",
+      "lat": 12.6,
+      "lon": -39.3,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table; not imaged by LROC.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Ranger 5"
+      },
+      "summary": "Ranger 5 lost power hours after launch and fell to the Moon silent, becoming one of the earliest human-made objects left on another world.",
+      "narrative": [
+        "Ranger 5 launched on 21 June 1962. A battery failure silenced the spacecraft within hours, and it continued on a trajectory that brought it to impact the Moon later that day at about 12.6 degrees north, 39.3 degrees west.",
+        "No images were returned. The spacecraft is catalogued by NASA as manmade material on the Moon, its wreckage still lying in the region it struck."
+      ],
+      "artifacts": [
+        {
+          "name": "Ranger 5 spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "21 June 1962"
+        },
+        {
+          "label": "Location",
+          "value": "12.6 N, 39.3 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Ranger 5",
+        "impact",
+        "1962",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Catalogue of Manmade Material on the Moon",
+          "publisher": "NASA History Program Office",
+          "url": "https://www.nasa.gov/wp-content/uploads/2024/02/final-catalogue-of-manmade-material-on-the-moon.pdf",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-ranger-3",
+        "moon-ranger-4",
+        "moon-ranger-6"
+      ]
+    },
+    {
       "id": "moon-ranger-6",
       "body": "moon",
       "name": "Ranger 6 impact site",
@@ -3219,7 +3998,7 @@
       "mission": "Ranger 6",
       "program": "Ranger",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Impactor — camera failure",
       "date": "1964-02-02",
       "status": "Crashed with no images returned",
@@ -3278,7 +4057,7 @@
       "mission": "Ranger 7",
       "program": "Ranger",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Impactor — first US close-up images of the Moon",
       "date": "1964-07-31",
       "status": "Crashed as designed",
@@ -3349,7 +4128,7 @@
       "mission": "Ranger 8",
       "program": "Ranger",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Impactor — Apollo site reconnaissance",
       "date": "1965-02-20",
       "status": "Crashed as designed",
@@ -3409,7 +4188,7 @@
       "mission": "Ranger 9",
       "program": "Ranger",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Impactor — final Ranger",
       "date": "1965-03-24",
       "status": "Crashed as designed",
@@ -3461,6 +4240,265 @@
       ]
     },
     {
+      "id": "moon-ranger-10",
+      "body": "moon",
+      "name": "Ranger 10",
+      "siteName": "Mare Tranquillitatis region",
+      "mission": "Ranger 10",
+      "program": "Ranger",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted spacecraft — Ranger series",
+      "date": "1965-03-25",
+      "status": "Mission failed — spacecraft impacted the Moon",
+      "statusKind": "failure",
+      "lat": 19.8,
+      "lon": -10.5,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table; not imaged by LROC.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Ranger 10"
+      },
+      "summary": "The last Ranger before the successful Ranger 7–9 series — it struck the Moon at about 19.8 N, 10.5 W after its camera failed.",
+      "narrative": [
+        "Ranger 10 launched on 25 March 1965 as a Block III Ranger. Its television camera failed shortly after launch, so when it impacted the Moon that day at about 19.8 degrees north, 10.5 degrees west, it returned no close-up images.",
+        "The spacecraft remains at its impact site, listed in NASA's lunar artefacts catalogue alongside the later, successful Rangers 7, 8 and 9."
+      ],
+      "artifacts": [
+        {
+          "name": "Ranger 10 spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "25 March 1965"
+        },
+        {
+          "label": "Location",
+          "value": "19.8 N, 10.5 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Ranger 10",
+        "impact",
+        "1965",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-ranger-9",
+        "moon-ranger-7",
+        "moon-ranger-8"
+      ]
+    },
+    {
+      "id": "moon-luna-5",
+      "body": "moon",
+      "name": "Luna 5",
+      "siteName": "Mare Serenitatis region",
+      "mission": "Luna 5",
+      "program": "Luna",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Luna series",
+      "date": "1965-05-12",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": -1.35,
+      "lon": -25.48,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Impact location from Ksanfomality (2018) as cited by NSSDCA; other published estimates differ by several degrees, hence approximate.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Luna 5"
+      },
+      "summary": "The Soviet Union's first attempt at a soft lunar landing — Luna 5 crashed at 1.35 S, 25.48 W and was left where it fell.",
+      "narrative": [
+        "Luna 5 launched on 9 May 1965 to attempt the first soft landing on the Moon. Its braking engine fired late, and on 12 May the lander struck the surface at about 1.35 degrees south, 25.48 degrees west, in the Mare Serenitatis region.",
+        "The wreckage remains there. NASA NSSDCA lists the impact coordinates from Ksanfomality (2018) and notes that other published estimates differ, so the position is shown as approximate rather than surveyed."
+      ],
+      "artifacts": [
+        {
+          "name": "Luna 5 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "12 May 1965"
+        },
+        {
+          "label": "Location",
+          "value": "1.35 S, 25.48 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Luna 5",
+        "impact",
+        "1965",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-luna-7",
+        "moon-luna-8",
+        "moon-luna-9"
+      ]
+    },
+    {
+      "id": "moon-luna-7",
+      "body": "moon",
+      "name": "Luna 7",
+      "siteName": "Oceanus Procellarum region",
+      "mission": "Luna 7",
+      "program": "Luna",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Luna series",
+      "date": "1965-10-07",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": 9,
+      "lon": -49,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table; not imaged by LROC.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Luna 7"
+      },
+      "summary": "Luna 7's parachute failed and the lander hit the Moon at 9 N, 49 W — another Soviet attempt left in the dust.",
+      "narrative": [
+        "Luna 7 launched on 4 October 1965. During descent its parachute system failed, and on 7 October the lander impacted the Moon at about 9 degrees north, 49 degrees west.",
+        "The spacecraft remains at the impact site, catalogued by NASA NSSDCA among the anthropogenic impacts on the Moon."
+      ],
+      "artifacts": [
+        {
+          "name": "Luna 7 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "7 October 1965"
+        },
+        {
+          "label": "Location",
+          "value": "9 N, 49 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Luna 7",
+        "impact",
+        "1965",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-luna-5",
+        "moon-luna-8",
+        "moon-luna-9"
+      ]
+    },
+    {
+      "id": "moon-luna-8",
+      "body": "moon",
+      "name": "Luna 8",
+      "siteName": "Oceanus Procellarum region",
+      "mission": "Luna 8",
+      "program": "Luna",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Luna series",
+      "date": "1965-12-06",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": 9.1,
+      "lon": -63.3,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table; not imaged by LROC.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Luna 8"
+      },
+      "summary": "Luna 8 aimed to land near Luna 7's wreck and instead joined it, impacting at 9.1 N, 63.3 W.",
+      "narrative": [
+        "Luna 8 launched on 3 December 1965 to attempt a soft landing in Oceanus Procellarum. Its descent failed, and on 6 December the lander impacted at about 9.1 degrees north, 63.3 degrees west.",
+        "The spacecraft remains where it struck. NASA NSSDCA lists its approximate impact coordinates in the table of anthropogenic impacts on the Moon."
+      ],
+      "artifacts": [
+        {
+          "name": "Luna 8 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "6 December 1965"
+        },
+        {
+          "label": "Location",
+          "value": "9.1 N, 63.3 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Luna 8",
+        "impact",
+        "1965",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-luna-7",
+        "moon-luna-9",
+        "moon-luna-13"
+      ]
+    },
+    {
       "id": "moon-luna-9",
       "body": "moon",
       "name": "Luna 9",
@@ -3468,7 +4506,7 @@
       "mission": "Luna 9",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — first soft landing on another world",
       "date": "1966-02-03",
       "status": "Mission complete — exact lander position unresolved",
@@ -3541,7 +4579,7 @@
       "mission": "Surveyor 1",
       "program": "Surveyor",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — first US soft landing on the Moon",
       "date": "1966-06-02",
       "status": "Mission complete — lander remains",
@@ -3614,7 +4652,7 @@
       "mission": "Surveyor 2",
       "program": "Surveyor",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Failed lander — uncontrolled impact",
       "date": "1966-09-22",
       "status": "Impacted after attitude control failure",
@@ -3673,7 +4711,7 @@
       "mission": "Lunar Orbiter 1",
       "program": "Lunar Orbiter",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Orbiter — deorbited after mapping",
       "date": "1966-10-29",
       "status": "Crashed deliberately after completing its mission",
@@ -3739,7 +4777,7 @@
       "mission": "Luna 13",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — soil mechanics measurements",
       "date": "1966-12-24",
       "status": "Mission complete — lander remains",
@@ -3799,7 +4837,7 @@
       "mission": "Surveyor 3",
       "program": "Surveyor",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — later inspected by Apollo 12 astronauts",
       "date": "1967-04-20",
       "status": "Mission complete — lander remains, parts removed by Apollo 12",
@@ -3879,6 +4917,77 @@
       "featured": true
     },
     {
+      "id": "moon-surveyor-4",
+      "body": "moon",
+      "name": "Surveyor 4",
+      "siteName": "Sinus Medii region",
+      "mission": "Surveyor 4",
+      "program": "Surveyor",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Surveyor series",
+      "date": "1967-06-17",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": 0.5,
+      "lon": -1.5,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "uncertain",
+      "coordNote": "NSSDCA lists Surveyor 4 location as unknown, estimated near 0.5 N, 1.5 W from trajectory analysis; possibly fragmented. Shown as uncertain.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Surveyor 4"
+      },
+      "summary": "Surveyor 4 went silent 2.5 minutes before landing and is thought to have crashed near Sinus Medii — its exact resting place is still unknown.",
+      "narrative": [
+        "Surveyor 4 launched on 14 June 1967 to land in Sinus Medii. Contact was lost about 2.5 minutes before touchdown, and the spacecraft is thought to have impacted at about 0.5 degrees north, 1.5 degrees west, possibly in fragments.",
+        "NASA NSSDCA lists the location as unknown with that estimate, and the Catalogue of Manmade Material on the Moon records Surveyor 4 as UNKNOWN. The marker is therefore shown as uncertain — the spacecraft is somewhere in that area, but no one has imaged it."
+      ],
+      "artifacts": [
+        {
+          "name": "Surveyor 4 lander",
+          "status": "Impacted — exact site unknown",
+          "note": "Estimated near 0.5 N, 1.5 W; possibly fragmented."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "17 June 1967 (estimated)"
+        },
+        {
+          "label": "Location",
+          "value": "0.5 N, 1.5 W (uncertain estimate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Surveyor 4",
+        "impact",
+        "1967",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Catalogue of Manmade Material on the Moon",
+          "publisher": "NASA History Program Office",
+          "url": "https://www.nasa.gov/wp-content/uploads/2024/02/final-catalogue-of-manmade-material-on-the-moon.pdf",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-surveyor-3",
+        "moon-surveyor-5",
+        "moon-surveyor-6"
+      ]
+    },
+    {
       "id": "moon-surveyor-5",
       "body": "moon",
       "name": "Surveyor 5",
@@ -3886,7 +4995,7 @@
       "mission": "Surveyor 5",
       "program": "Surveyor",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — first chemical analysis of lunar soil",
       "date": "1967-09-11",
       "status": "Mission complete — lander remains",
@@ -3952,7 +5061,7 @@
       "mission": "Lunar Orbiter 3",
       "program": "Lunar Orbiter",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Orbiter — deorbited after mapping",
       "date": "1967-10-09",
       "status": "Crashed deliberately",
@@ -4011,7 +5120,7 @@
       "mission": "Lunar Orbiter 2",
       "program": "Lunar Orbiter",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Orbiter — deorbited after mapping",
       "date": "1967-10-11",
       "status": "Crashed deliberately",
@@ -4070,7 +5179,7 @@
       "mission": "Surveyor 6",
       "program": "Surveyor",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — performed a short hop",
       "date": "1967-11-10",
       "status": "Mission complete — two landing marks remain",
@@ -4131,7 +5240,7 @@
       "mission": "Surveyor 7",
       "program": "Surveyor",
       "agency": "NASA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — the last Surveyor",
       "date": "1968-01-10",
       "status": "Mission complete — lander remains",
@@ -4197,7 +5306,7 @@
       "mission": "Lunar Orbiter 5",
       "program": "Lunar Orbiter",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Orbiter — deorbited after mapping",
       "date": "1968-01-31",
       "status": "Crashed deliberately",
@@ -4256,7 +5365,7 @@
       "mission": "Apollo 11",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "crewed-landing",
+      "category": "landing",
       "categoryDetail": "Crewed landing — descent stage abandoned on the surface",
       "date": "1969-07-20",
       "status": "Mission complete — descent stage, experiments and equipment remain",
@@ -4399,7 +5508,7 @@
       "mission": "Apollo 11",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "artifact",
+      "category": "abandoned",
       "categoryDetail": "Scientific instrument still in use",
       "date": "1969-07-21",
       "status": "Still operating — ranged by observatories worldwide",
@@ -4410,7 +5519,7 @@
       "coordAccuracy": "surveyed",
       "coordNote": "NSSDCA publishes the reflector position separately from the descent stage because it is a separate, precisely surveyed target.",
       "verification": {
-        "dataset": "nssdca-apollo-sites",
+        "dataset": "nssdca-lunar-artifacts",
         "match": "Apollo 11 LRRR"
       },
       "summary": "A suitcase-sized array of 100 corner cubes that has been bouncing laser pulses back to Earth since 1969 — the only Apollo experiment still returning data.",
@@ -4483,7 +5592,7 @@
       "mission": "Luna 15",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Failed sample-return lander — crashed during descent",
       "date": "1969-07-21",
       "status": "Crashed into the Moon",
@@ -4544,7 +5653,7 @@
       "mission": "Apollo 12",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "crewed-landing",
+      "category": "landing",
       "categoryDetail": "Crewed landing — precision touchdown beside Surveyor 3",
       "date": "1969-11-19",
       "status": "Mission complete — hardware remains; ALSEP operated until 1977",
@@ -4665,7 +5774,7 @@
       "mission": "Apollo 12",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Deliberate spacecraft impact — seismic calibration",
       "date": "1969-11-20",
       "status": "Impacted as planned",
@@ -4735,7 +5844,7 @@
       "mission": "Apollo 13",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Saturn S-IVB upper stage impact",
       "date": "1970-04-15",
       "status": "Impacted as planned",
@@ -4807,7 +5916,7 @@
       "mission": "Luna 16",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Sample-return lander — first robotic return of lunar material",
       "date": "1970-09-20",
       "status": "Mission complete — descent stage remains",
@@ -4872,7 +5981,7 @@
       "mission": "Luna 17",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Lander — delivered the Lunokhod 1 rover",
       "date": "1970-11-17",
       "status": "Mission complete — lander and ramp remain",
@@ -4941,7 +6050,7 @@
       "mission": "Luna 17 / Lunokhod 1",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "rover",
+      "category": "abandoned",
       "categoryDetail": "Rover — remote-controlled, 10.5 km driven",
       "date": "1970-11-17",
       "status": "Lost contact October 1971 — rover remains",
@@ -5019,7 +6128,7 @@
       "mission": "Apollo 14",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Saturn S-IVB upper stage impact",
       "date": "1971-02-04",
       "status": "Impacted as planned",
@@ -5080,7 +6189,7 @@
       "mission": "Apollo 14",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "crewed-landing",
+      "category": "landing",
       "categoryDetail": "Crewed landing — highlands site, birth of the ALSEP network",
       "date": "1971-02-05",
       "status": "Mission complete — hardware remains",
@@ -5190,7 +6299,7 @@
       "mission": "Apollo 14",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Deliberate spacecraft impact — seismic calibration",
       "date": "1971-02-07",
       "status": "Impacted as planned",
@@ -5250,7 +6359,7 @@
       "mission": "Apollo 15",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Saturn S-IVB upper stage impact",
       "date": "1971-07-29",
       "status": "Impacted as planned",
@@ -5310,7 +6419,7 @@
       "mission": "Apollo 15",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "crewed-landing",
+      "category": "landing",
       "categoryDetail": "Crewed landing — first Lunar Roving Vehicle",
       "date": "1971-07-30",
       "status": "Mission complete — rover and experiments remain",
@@ -5429,7 +6538,7 @@
       "mission": "Apollo 15",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Deliberate spacecraft impact — seismic calibration",
       "date": "1971-08-03",
       "status": "Impacted as planned",
@@ -5489,7 +6598,7 @@
       "mission": "Luna 18",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Failed sample-return lander — crashed",
       "date": "1971-09-11",
       "status": "Crashed during landing",
@@ -5549,7 +6658,7 @@
       "mission": "Luna 20",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Sample-return lander — highland material",
       "date": "1972-02-21",
       "status": "Mission complete — descent stage remains",
@@ -5615,7 +6724,7 @@
       "mission": "Apollo 16",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Saturn S-IVB upper stage impact — tracking lost",
       "date": "1972-04-19",
       "status": "Impacted — exact timing uncertain",
@@ -5686,7 +6795,7 @@
       "mission": "Apollo 16",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "crewed-landing",
+      "category": "landing",
       "categoryDetail": "Crewed landing — highlands geology and the fastest rover",
       "date": "1972-04-21",
       "status": "Mission complete — hardware remains",
@@ -5804,7 +6913,7 @@
       "mission": "Apollo 17",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Saturn S-IVB upper stage impact",
       "date": "1972-12-10",
       "status": "Impacted as planned",
@@ -5865,7 +6974,7 @@
       "mission": "Apollo 17",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "crewed-landing",
+      "category": "landing",
       "categoryDetail": "Crewed landing — last humans on the Moon",
       "date": "1972-12-11",
       "status": "Mission complete — the last crewed landing site",
@@ -5989,7 +7098,7 @@
       "mission": "Apollo 17",
       "program": "Apollo",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Deliberate spacecraft impact — final Apollo crash",
       "date": "1972-12-15",
       "status": "Impacted as planned",
@@ -6049,7 +7158,7 @@
       "mission": "Luna 21",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Lander — delivered the Lunokhod 2 rover",
       "date": "1973-01-15",
       "status": "Mission complete — lander and ramps remain",
@@ -6110,7 +7219,7 @@
       "mission": "Luna 21 / Lunokhod 2",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "rover",
+      "category": "abandoned",
       "categoryDetail": "Rover — 42 km driven, still holds the lunar distance record",
       "date": "1973-01-16",
       "status": "Mission ended June 1973 — rover remains",
@@ -6188,7 +7297,7 @@
       "mission": "Luna 23",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Sample-return lander — drill damaged on landing",
       "date": "1974-11-06",
       "status": "Partial success — landed, sample not returned",
@@ -6248,7 +7357,7 @@
       "mission": "Luna 24",
       "program": "Luna",
       "agency": "Soviet Union",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Sample-return lander — last Soviet lunar mission",
       "date": "1976-08-18",
       "status": "Mission complete — descent stage remains",
@@ -6308,6 +7417,71 @@
       ]
     },
     {
+      "id": "moon-hiten",
+      "body": "moon",
+      "name": "Hiten (MUSES-A)",
+      "siteName": "Mare Crisium region",
+      "mission": "Hiten",
+      "agency": "ISAS / JAXA (Japan)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — first non-US/Soviet lunar orbiter",
+      "date": "1993-04-10",
+      "status": "Mission complete — spacecraft intentionally impacted the Moon",
+      "statusKind": "success",
+      "lat": -34,
+      "lon": 55.3,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Hiten"
+      },
+      "summary": "Japan's Hiten orbited the Moon for over a year, then was deliberately crashed at 34 S, 55.3 E in 1993.",
+      "narrative": [
+        "Hiten, launched by Japan's Institute of Space and Astronautical Science in 1990, became the first lunar orbiter from outside the United States and Soviet Union. After more than a year in lunar orbit, it was intentionally impacted on 10 April 1993 at about 34 degrees south, 55.3 degrees east.",
+        "The spacecraft remains at its impact site, listed by NASA NSSDCA in the table of anthropogenic impacts on the Moon."
+      ],
+      "artifacts": [
+        {
+          "name": "Hiten spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "10 April 1993"
+        },
+        {
+          "label": "Location",
+          "value": "34 S, 55.3 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Hiten",
+        "MUSES-A",
+        "impact",
+        "1993",
+        "Japan",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-kaguya",
+        "moon-smart-1",
+        "moon-lunar-prospector"
+      ]
+    },
+    {
       "id": "moon-lunar-prospector",
       "body": "moon",
       "name": "Lunar Prospector impact — Shoemaker crater",
@@ -6315,7 +7489,7 @@
       "mission": "Lunar Prospector",
       "program": "Discovery",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Deliberate impact — controlled crash with human remains on board",
       "date": "1999-07-31",
       "status": "Impacted as planned",
@@ -6379,6 +7553,264 @@
       ]
     },
     {
+      "id": "moon-smart-1",
+      "body": "moon",
+      "name": "SMART-1",
+      "siteName": "Lacus Excellentiae region",
+      "mission": "SMART-1",
+      "agency": "ESA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — ESA lunar mission",
+      "date": "2006-09-03",
+      "status": "Mission complete — spacecraft intentionally impacted the Moon",
+      "statusKind": "success",
+      "lat": -34.4,
+      "lon": -46.2,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "SMART-1"
+      },
+      "summary": "Europe's SMART-1 tested solar-electric propulsion around the Moon, then ended its mission with a controlled impact at 34.4 S, 46.2 W.",
+      "narrative": [
+        "SMART-1, the European Space Agency's first lunar mission, launched in 2003 and used solar-electric propulsion to reach the Moon in 2006. After mapping the surface, it was intentionally impacted on 3 September 2006 at about 34.4 degrees south, 46.2 degrees west.",
+        "The spacecraft remains at its impact site in the Lacus Excellentiae region, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "SMART-1 spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "3 September 2006"
+        },
+        {
+          "label": "Location",
+          "value": "34.4 S, 46.2 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "SMART-1",
+        "ESA",
+        "impact",
+        "2006",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-hiten",
+        "moon-kaguya",
+        "moon-ladee"
+      ]
+    },
+    {
+      "id": "moon-okina",
+      "body": "moon",
+      "name": "Okina (RSAT)",
+      "siteName": "Far-side region",
+      "mission": "Okina / RSAT",
+      "agency": "JAXA (Japan)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted subsatellite — Kaguya mission",
+      "date": "2009-02-12",
+      "status": "Mission complete — subsatellite impacted the Moon",
+      "statusKind": "success",
+      "lat": 28.213,
+      "lon": -159.033,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Impact location published in NASA NSSDCA anthropogenic impacts table.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Okina"
+      },
+      "summary": "Okina, a small relay satellite released from Kaguya, was crashed on the far side at 28.213 N, 159.033 W in 2009.",
+      "narrative": [
+        "Okina was a small subsatellite released from Japan's Kaguya orbiter to relay signals. On 12 February 2009 it impacted the Moon at 28.213 degrees north, 159.033 degrees west, on the far side.",
+        "The subsatellite remains at its impact site, listed by NASA NSSDCA in the table of anthropogenic impacts on the Moon."
+      ],
+      "artifacts": [
+        {
+          "name": "Okina subsatellite",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "12 February 2009"
+        },
+        {
+          "label": "Location",
+          "value": "28.213 N, 159.033 W"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Okina",
+        "RSAT",
+        "Kaguya",
+        "impact",
+        "2009",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-kaguya",
+        "moon-hiten",
+        "moon-chang-e-1"
+      ]
+    },
+    {
+      "id": "moon-chang-e-1",
+      "body": "moon",
+      "name": "Chang'e 1",
+      "siteName": "Mare Fecunditatis region",
+      "mission": "Chang'e 1",
+      "agency": "CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Chinese lunar mission",
+      "date": "2009-03-01",
+      "status": "Mission complete — spacecraft intentionally impacted the Moon",
+      "statusKind": "success",
+      "lat": -1.5,
+      "lon": 52.36,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Chang'e 1"
+      },
+      "summary": "China's first lunar orbiter mapped the Moon for 16 months, then was crashed at 1.5 S, 52.36 E in 2009.",
+      "narrative": [
+        "Chang'e 1 launched in October 2007 and became China's first lunar orbiter, producing a complete map of the lunar surface. On 1 March 2009 it was intentionally impacted at about 1.5 degrees south, 52.36 degrees east.",
+        "The spacecraft remains at its impact site, listed by NASA NSSDCA among the anthropogenic impacts on the Moon."
+      ],
+      "artifacts": [
+        {
+          "name": "Chang'e 1 spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "1 March 2009"
+        },
+        {
+          "label": "Location",
+          "value": "1.5 S, 52.36 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Chang'e 1",
+        "impact",
+        "2009",
+        "China",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-2",
+        "moon-chang-e-3",
+        "moon-chang-e-4"
+      ]
+    },
+    {
+      "id": "moon-kaguya",
+      "body": "moon",
+      "name": "Kaguya (SELENE)",
+      "siteName": "Near the lunar south pole",
+      "mission": "Kaguya / SELENE",
+      "agency": "JAXA (Japan)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Japanese lunar mission",
+      "date": "2009-06-10",
+      "status": "Mission complete — spacecraft intentionally impacted the Moon",
+      "statusKind": "success",
+      "lat": -65.5,
+      "lon": 80.4,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published in NASA NSSDCA anthropogenic impacts table.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Kaguya"
+      },
+      "summary": "Japan's Kaguya orbiter mapped the Moon in high detail, then was deliberately crashed near the south pole at 65.5 S, 80.4 E.",
+      "narrative": [
+        "Kaguya, also called SELENE, launched in 2007 and carried out the most detailed global mapping of the Moon to that date. On 10 June 2009 it was intentionally impacted at about 65.5 degrees south, 80.4 degrees east, near the lunar south pole.",
+        "The spacecraft remains at its impact site, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Kaguya spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "10 June 2009"
+        },
+        {
+          "label": "Location",
+          "value": "65.5 S, 80.4 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Kaguya",
+        "SELENE",
+        "impact",
+        "2009",
+        "Japan",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-hiten",
+        "moon-okina",
+        "moon-smart-1"
+      ]
+    },
+    {
       "id": "moon-lcross-centaur",
       "body": "moon",
       "name": "LCROSS Centaur impact — Cabeus crater",
@@ -6386,7 +7818,7 @@
       "mission": "LCROSS",
       "program": "Lunar Precursor Robotic Program",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Deliberate impact — water-ice detection experiment",
       "date": "2009-10-09",
       "status": "Impact successful — water confirmed in ejecta",
@@ -6466,7 +7898,7 @@
       "mission": "LCROSS",
       "program": "Lunar Precursor Robotic Program",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Deliberate impact — followed the Centaur into the crater",
       "date": "2009-10-09",
       "status": "Impacted as planned",
@@ -6519,6 +7951,70 @@
       ]
     },
     {
+      "id": "moon-chang-e-2",
+      "body": "moon",
+      "name": "Chang'e 2",
+      "siteName": "Mare Serenitatis region",
+      "mission": "Chang'e 2",
+      "agency": "CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Chinese lunar mission",
+      "date": "2010-10-08",
+      "status": "Mission complete — spacecraft intentionally impacted the Moon",
+      "statusKind": "success",
+      "lat": 28.2,
+      "lon": -26.4,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Chang'e 2; NSSDCA table records the impact date and type.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Chang'e 2"
+      },
+      "summary": "Chang'e 2 mapped the Moon at high resolution for a year, then was crashed at 28.2 N, 26.4 W in 2010.",
+      "narrative": [
+        "Chang'e 2 launched in October 2010 to select a landing site for Chang'e 3, mapping the Moon at higher resolution than Chang'e 1. On 8 October 2010 it was intentionally impacted at about 28.2 degrees north, 26.4 degrees west.",
+        "The spacecraft remains at its impact site, catalogued by NASA NSSDCA as an anthropogenic impact on the Moon."
+      ],
+      "artifacts": [
+        {
+          "name": "Chang'e 2 spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "8 October 2010"
+        },
+        {
+          "label": "Location",
+          "value": "28.2 N, 26.4 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Chang'e 2",
+        "impact",
+        "2010",
+        "China",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-1",
+        "moon-chang-e-3",
+        "moon-chang-e-4"
+      ]
+    },
+    {
       "id": "moon-grail-a",
       "body": "moon",
       "name": "GRAIL A (Ebb) impact site",
@@ -6526,7 +8022,7 @@
       "mission": "GRAIL",
       "program": "Discovery",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Orbiter — deliberate end-of-mission impact",
       "date": "2012-12-17",
       "status": "Impacted as planned",
@@ -6586,7 +8082,7 @@
       "mission": "GRAIL",
       "program": "Discovery",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Orbiter — deliberate end-of-mission impact",
       "date": "2012-12-17",
       "status": "Impacted as planned",
@@ -6639,6 +8135,154 @@
       ]
     },
     {
+      "id": "moon-chang-e-3",
+      "body": "moon",
+      "name": "Chang'e 3 lander",
+      "siteName": "Mare Imbrium, Sinus Iridum",
+      "mission": "Chang'e 3",
+      "agency": "CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — first Chinese soft landing on the Moon",
+      "date": "2013-12-14",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 44.1214,
+      "lon": -19.5117,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Position identified in Lunar Reconnaissance Orbiter Camera images (LROC Featured Sites).",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Chang'e 3"
+      },
+      "summary": "China's first Moon landing — Chang'e 3 touched down in Sinus Iridum in 2013 and is still there, imaged by LROC.",
+      "narrative": [
+        "Chang'e 3 landed on 14 December 2013 at 44.1214 degrees north, 19.5117 degrees west in Sinus Iridum, Mare Imbrium — China's first soft landing on the Moon. It deployed the Yutu rover, which operated for several weeks.",
+        "The lander remains on the surface. Lunar Reconnaissance Orbiter Camera images show the lander and rover tracks at the site, as recorded in NASA NSSDCA's table and LROC Featured Sites."
+      ],
+      "artifacts": [
+        {
+          "name": "Chang'e 3 lander",
+          "status": "Still on surface",
+          "note": "Imaged by LROC."
+        },
+        {
+          "name": "Yutu rover",
+          "status": "Stopped nearby",
+          "note": "See moon-yutu record."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "14 December 2013"
+        },
+        {
+          "label": "Location",
+          "value": "44.1214 N, 19.5117 W"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Chang'e 3",
+        "Yutu",
+        "landing",
+        "2013",
+        "China",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "LROC Featured Sites — Chang'e 3 Landing Site",
+          "publisher": "LROC Science Operations Center (ASU)",
+          "url": "https://www.lroc.asu.edu/featured_sites",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-yutu",
+        "moon-chang-e-4",
+        "moon-chang-e-5"
+      ]
+    },
+    {
+      "id": "moon-yutu",
+      "body": "moon",
+      "name": "Yutu rover",
+      "siteName": "Mare Imbrium, Sinus Iridum",
+      "mission": "Chang'e 3 / Yutu",
+      "agency": "CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Rover — stopped on the lunar surface",
+      "date": "2013-12-14",
+      "status": "Mission ended — rover remains on surface",
+      "statusKind": "success",
+      "lat": 44.1208,
+      "lon": -19.5122,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Position identified in Lunar Reconnaissance Orbiter Camera images (LROC Featured Sites).",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Yutu Rover"
+      },
+      "summary": "Yutu, China's first lunar rover, drove from Chang'e 3 in 2013 and stopped in Sinus Iridum, where it remains.",
+      "narrative": [
+        "Yutu was deployed from the Chang'e 3 lander on 14 December 2013 and became China's first lunar rover. It drove across the surface of Sinus Iridum at 44.1208 degrees north, 19.5122 degrees west, before its mobility failed.",
+        "The rover remains where it stopped. LROC images show its tracks and final position near the lander, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Yutu rover",
+          "status": "Stopped — remains on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Deployed",
+          "value": "14 December 2013"
+        },
+        {
+          "label": "Location",
+          "value": "44.1208 N, 19.5122 W"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Yutu",
+        "rover",
+        "2013",
+        "China",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "LROC Featured Sites — Chang'e 3 Landing Site",
+          "publisher": "LROC Science Operations Center (ASU)",
+          "url": "https://www.lroc.asu.edu/featured_sites",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-3",
+        "moon-lunokhod-1",
+        "moon-lunokhod-2"
+      ]
+    },
+    {
       "id": "moon-ladee",
       "body": "moon",
       "name": "LADEE impact site",
@@ -6646,7 +8290,7 @@
       "mission": "LADEE",
       "program": "Lunar Quest",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Orbiter — deliberate deorbit at end of mission",
       "date": "2014-04-18",
       "status": "Impacted as planned",
@@ -6707,7 +8351,7 @@
       "mission": "Chang'e 4",
       "program": "Chang'e",
       "agency": "CNSA",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander and rover — first far-side landing",
       "date": "2019-01-03",
       "status": "Rover still operating as of recent mission updates",
@@ -6774,6 +8418,401 @@
       ]
     },
     {
+      "id": "moon-beresheet",
+      "body": "moon",
+      "name": "Beresheet",
+      "siteName": "Mare Serenitatis region",
+      "mission": "Beresheet",
+      "agency": "SpaceIL (Israel)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — first privately funded lunar landing attempt",
+      "date": "2019-04-11",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": 32.5956,
+      "lon": 19.3496,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Impact position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Beresheet"
+      },
+      "summary": "Beresheet, the first privately funded Moon landing attempt, crashed at 32.5956 N, 19.3496 E in 2019 and was imaged by LROC.",
+      "narrative": [
+        "Beresheet, built by the Israeli non-profit SpaceIL, launched in February 2019 as the first privately funded attempt to land on the Moon. During its landing burn on 11 April 2019 the main engine failed, and the lander impacted at 32.5956 degrees north, 19.3496 degrees east.",
+        "Lunar Reconnaissance Orbiter Camera images show the impact site and debris. The spacecraft remains there, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Beresheet lander",
+          "status": "Impacted — remains on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "11 April 2019"
+        },
+        {
+          "label": "Location",
+          "value": "32.5956 N, 19.3496 E"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Beresheet",
+        "SpaceIL",
+        "impact",
+        "2019",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-hakuto-r1",
+        "moon-vikram-chandrayaan-2",
+        "moon-im1-odysseus"
+      ]
+    },
+    {
+      "id": "moon-longjiang-2",
+      "body": "moon",
+      "name": "Longjiang-2 (DSLWP-B)",
+      "siteName": "Far-side region",
+      "mission": "Longjiang-2 / DSLWP-B",
+      "agency": "CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted microsatellite — Chinese lunar mission",
+      "date": "2019-07-31",
+      "status": "Mission complete — microsatellite intentionally impacted the Moon",
+      "statusKind": "success",
+      "lat": 16.6956,
+      "lon": 159.517,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Impact position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Longjiang 2"
+      },
+      "summary": "Longjiang-2, a 47 kg microsatellite that orbited the far side, was crashed at 16.6956 N, 159.517 E in 2019.",
+      "narrative": [
+        "Longjiang-2 was a microsatellite carried to the Moon by Chang'e 4 to test low-frequency radio astronomy on the far side. On 31 July 2019 it was intentionally impacted at 16.6956 degrees north, 159.517 degrees east.",
+        "Lunar Reconnaissance Orbiter Camera images show the impact site. The microsatellite remains there, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Longjiang-2 microsatellite",
+          "status": "Impacted — remains on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "31 July 2019"
+        },
+        {
+          "label": "Location",
+          "value": "16.6956 N, 159.517 E"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Longjiang-2",
+        "DSLWP-B",
+        "impact",
+        "2019",
+        "China",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-4",
+        "moon-chang-e-5",
+        "moon-okina"
+      ]
+    },
+    {
+      "id": "moon-vikram-chandrayaan-2",
+      "body": "moon",
+      "name": "Vikram lander (Chandrayaan-2)",
+      "siteName": "Near the lunar south pole",
+      "mission": "Chandrayaan-2 / Vikram",
+      "agency": "ISRO (India)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Indian lunar mission",
+      "date": "2019-09-06",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": -70.881,
+      "lon": 22.784,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Impact position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Vikram"
+      },
+      "summary": "India's Vikram lander crashed near the south pole at 70.881 S, 22.784 E in 2019 — its wreck was found by LROC.",
+      "narrative": [
+        "Vikram, the lander for India's Chandrayaan-2 mission, attempted to land near the lunar south pole on 6 September 2019. Contact was lost during descent, and the lander impacted at 70.881 degrees south, 22.784 degrees east.",
+        "Lunar Reconnaissance Orbiter Camera images later identified the impact site and debris. The lander remains there, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Vikram lander",
+          "status": "Impacted — remains on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "6 September 2019"
+        },
+        {
+          "label": "Location",
+          "value": "70.881 S, 22.784 E"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Vikram",
+        "Chandrayaan-2",
+        "impact",
+        "2019",
+        "India",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chandrayaan-3",
+        "moon-beresheet",
+        "moon-hakuto-r1"
+      ]
+    },
+    {
+      "id": "moon-chang-e-5",
+      "body": "moon",
+      "name": "Chang'e 5 lander",
+      "siteName": "Oceanus Procellarum, Mons Rümker",
+      "mission": "Chang'e 5",
+      "agency": "CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — sample return mission",
+      "date": "2020-12-01",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 43.0576,
+      "lon": -51.9161,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Chang'e 5"
+      },
+      "summary": "Chang'e 5 landed near Mons Rümker in 2020, collected lunar samples and returned them to Earth — the lander itself is still there.",
+      "narrative": [
+        "Chang'e 5 landed on 1 December 2020 at 43.0576 degrees north, 51.9161 degrees west near Mons Rümker in Oceanus Procellarum. It collected lunar samples and its ascent craft returned them to Earth, the first lunar sample return since Luna 24 in 1976.",
+        "The lander remains on the surface. Lunar Reconnaissance Orbiter Camera images show the lander at the site, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Chang'e 5 lander",
+          "status": "Still on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "1 December 2020"
+        },
+        {
+          "label": "Location",
+          "value": "43.0576 N, 51.9161 W"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Chang'e 5",
+        "sample return",
+        "landing",
+        "2020",
+        "China",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-3",
+        "moon-chang-e-4",
+        "moon-chang-e-6"
+      ]
+    },
+    {
+      "id": "moon-chang-e-5-t1",
+      "body": "moon",
+      "name": "Chang'e 5-T1 booster",
+      "siteName": "Far-side region",
+      "mission": "Chang'e 5-T1 / CE5T1",
+      "agency": "CNSA (China)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted booster — Chang'e 5 test mission",
+      "date": "2022-03-04",
+      "status": "Mission complete — booster impacted the Moon",
+      "statusKind": "success",
+      "lat": 5.226,
+      "lon": -125.514,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Impact position identified in Lunar Reconnaissance Orbiter Camera images. Source longitude 234.486 E converted to -125.514.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Chang'e 5-T1 Booster"
+      },
+      "summary": "The Chang'e 5-T1 booster, left in lunar orbit after its 2014 test flight, finally crashed at 5.226 N, 125.514 W in 2022.",
+      "narrative": [
+        "The Chang'e 5-T1 service module was left in lunar orbit after its 2014 test flight. Its orbit decayed, and on 4 March 2022 it impacted the Moon at 5.226 degrees north, 125.514 degrees west.",
+        "Lunar Reconnaissance Orbiter Camera images show the impact site. The booster remains there, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Chang'e 5-T1 booster",
+          "status": "Impacted — remains on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "4 March 2022"
+        },
+        {
+          "label": "Location",
+          "value": "5.226 N, 125.514 W"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Chang'e 5-T1",
+        "CE5T1",
+        "impact",
+        "2022",
+        "China",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-5",
+        "moon-chang-e-6",
+        "moon-longjiang-2"
+      ]
+    },
+    {
+      "id": "moon-hakuto-r1",
+      "body": "moon",
+      "name": "Hakuto-R Mission 1",
+      "siteName": "Mare Frigoris region",
+      "mission": "Hakuto-R Mission 1",
+      "agency": "ispace (Japan)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — first privately funded Japanese lunar landing attempt",
+      "date": "2023-04-25",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": 47.581,
+      "lon": 44.094,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Impact position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Hakuto-R Mission 1"
+      },
+      "summary": "Hakuto-R Mission 1 crashed at 47.581 N, 44.094 E in 2023 — the first commercial Japanese Moon landing attempt, now a wreck imaged by LROC.",
+      "narrative": [
+        "Hakuto-R Mission 1, built by the Japanese company ispace, attempted to land on the Moon on 25 April 2023. During descent its altitude calculation failed, and the lander impacted at 47.581 degrees north, 44.094 degrees east.",
+        "Lunar Reconnaissance Orbiter Camera images show the impact site and debris. The lander remains there, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Hakuto-R Mission 1 lander",
+          "status": "Impacted — remains on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "25 April 2023"
+        },
+        {
+          "label": "Location",
+          "value": "47.581 N, 44.094 E"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Hakuto-R",
+        "ispace",
+        "impact",
+        "2023",
+        "Japan",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-hakuto-r2",
+        "moon-beresheet",
+        "moon-im1-odysseus"
+      ]
+    },
+    {
       "id": "moon-luna-25",
       "body": "moon",
       "name": "Luna 25 impact site",
@@ -6781,7 +8820,7 @@
       "mission": "Luna 25",
       "program": "Luna",
       "agency": "Roscosmos",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Failed lander — crashed into the Moon",
       "date": "2023-08-19",
       "status": "Crashed during orbit-lowering burn",
@@ -6852,7 +8891,7 @@
       "mission": "Chandrayaan-3",
       "program": "Chandrayaan",
       "agency": "ISRO",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Robotic lander — first landing near the lunar south pole",
       "date": "2023-08-23",
       "status": "Mission complete — lander remains, rover dormant",
@@ -6919,6 +8958,75 @@
       ]
     },
     {
+      "id": "moon-slim",
+      "body": "moon",
+      "name": "SLIM lander",
+      "siteName": "Mare Nectaris, Shioli Crater",
+      "mission": "SLIM",
+      "agency": "JAXA (Japan)",
+      "category": "landing",
+      "categoryDetail": "Robotic lander — precision landing demonstration",
+      "date": "2024-01-19",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -13.316,
+      "lon": 25.251,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "SLIM"
+      },
+      "summary": "Japan's SLIM lander touched down in Shioli Crater in 2024, demonstrating precision landing — it sits at 13.316 S, 25.251 E.",
+      "narrative": [
+        "SLIM, the Smart Lander for Investigating Moon, landed on 19 January 2024 at 13.316 degrees south, 25.251 degrees east in Shioli Crater, Mare Nectaris. It demonstrated precision landing using image matching, touching down within tens of metres of its target.",
+        "The lander remains on the surface. Lunar Reconnaissance Orbiter Camera images show SLIM at the site, as recorded by NASA NSSDCA. It is classified as a landing location (blue) because it completed its demonstration mission on the surface."
+      ],
+      "artifacts": [
+        {
+          "name": "SLIM lander",
+          "status": "Still on surface",
+          "note": "Imaged by LROC."
+        },
+        {
+          "name": "LEV-1 / LEV-2 hopping robots",
+          "status": "Deployed nearby"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "19 January 2024"
+        },
+        {
+          "label": "Location",
+          "value": "13.316 S, 25.251 E"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "SLIM",
+        "JAXA",
+        "landing",
+        "2024",
+        "Japan"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-6",
+        "moon-im1-odysseus",
+        "moon-blue-ghost-1"
+      ]
+    },
+    {
       "id": "moon-im1-odysseus",
       "body": "moon",
       "name": "Odysseus (IM-1) — first commercial lunar landing",
@@ -6926,7 +9034,7 @@
       "mission": "Intuitive Machines IM-1 / Odysseus",
       "program": "Commercial Lunar Payload Services",
       "agency": "NASA / Intuitive Machines",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Commercial lander — tipped over after landing",
       "date": "2024-02-22",
       "status": "Landed on its side; mission ended after 7 days",
@@ -6993,6 +9101,72 @@
       ]
     },
     {
+      "id": "moon-chang-e-6",
+      "body": "moon",
+      "name": "Chang'e 6 lander",
+      "siteName": "South Pole–Aitken Basin, Apollo Crater",
+      "mission": "Chang'e 6",
+      "agency": "CNSA (China)",
+      "category": "landing",
+      "categoryDetail": "Robotic lander — first far-side sample return",
+      "date": "2024-06-01",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -41.6385,
+      "lon": -153.9852,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Chang'e 6"
+      },
+      "summary": "Chang'e 6 landed on the far side in 2024 and returned the first samples from there — the lander sits at 41.6385 S, 153.9852 W.",
+      "narrative": [
+        "Chang'e 6 landed on 1 June 2024 at 41.6385 degrees south, 153.9852 degrees west in Apollo Crater, South Pole–Aitken Basin — the first landing on the lunar far side to return samples. It collected samples and its ascent craft returned them to Earth.",
+        "The lander remains on the surface. Lunar Reconnaissance Orbiter Camera images show Chang'e 6 at the site, as recorded by NASA NSSDCA. It is classified as a landing location (blue) because it completed its sample-return mission on the surface."
+      ],
+      "artifacts": [
+        {
+          "name": "Chang'e 6 lander",
+          "status": "Still on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "1 June 2024"
+        },
+        {
+          "label": "Location",
+          "value": "41.6385 S, 153.9852 W"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Chang'e 6",
+        "sample return",
+        "far side",
+        "landing",
+        "2024",
+        "China"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chang-e-4",
+        "moon-chang-e-5",
+        "moon-slim"
+      ]
+    },
+    {
       "id": "moon-blue-ghost-1",
       "body": "moon",
       "name": "Blue Ghost Mission 1",
@@ -7000,7 +9174,7 @@
       "mission": "Blue Ghost Mission 1 (Firefly Aerospace)",
       "program": "Commercial Lunar Payload Services",
       "agency": "NASA / Firefly Aerospace",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Commercial lander — first fully successful CLPS landing",
       "date": "2025-03-02",
       "status": "Completed 14-day surface mission",
@@ -7078,7 +9252,7 @@
       "mission": "Intuitive Machines IM-2 / Athena",
       "program": "Commercial Lunar Payload Services",
       "agency": "NASA / Intuitive Machines",
-      "category": "robotic-landing",
+      "category": "abandoned",
       "categoryDetail": "Commercial lander — tipped over in a crater",
       "date": "2025-03-06",
       "status": "Landed off-target and tipped; mission ended early",
@@ -7144,6 +9318,621 @@
       ]
     },
     {
+      "id": "moon-hakuto-r2",
+      "body": "moon",
+      "name": "Hakuto-R Mission 2 (Resilience)",
+      "siteName": "Mare Frigoris region",
+      "mission": "Hakuto-R Mission 2 / Resilience",
+      "agency": "ispace (Japan)",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — second ispace lunar landing attempt",
+      "date": "2025-06-05",
+      "status": "Mission failed — lander impacted the Moon",
+      "statusKind": "failure",
+      "lat": 60.4445,
+      "lon": -4.588,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "mapped",
+      "coordNote": "Impact position identified in Lunar Reconnaissance Orbiter Camera images.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Hakuto-R Mission 2"
+      },
+      "summary": "Hakuto-R Mission 2 crashed at 60.4445 N, 4.588 W in 2025, joining its predecessor as a wreck on the Moon.",
+      "narrative": [
+        "Hakuto-R Mission 2, the Resilience lander built by ispace, attempted to land on 5 June 2025. During descent it impacted the Moon at 60.4445 degrees north, 4.588 degrees west.",
+        "Lunar Reconnaissance Orbiter Camera images show the impact site. The lander remains there, as recorded by NASA NSSDCA."
+      ],
+      "artifacts": [
+        {
+          "name": "Hakuto-R Mission 2 lander (Resilience)",
+          "status": "Impacted — remains on surface",
+          "note": "Imaged by LROC."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "5 June 2025"
+        },
+        {
+          "label": "Location",
+          "value": "60.4445 N, 4.588 W"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Hakuto-R",
+        "Resilience",
+        "ispace",
+        "impact",
+        "2025",
+        "Japan",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-hakuto-r1",
+        "moon-im2-athena",
+        "moon-blue-ghost-1"
+      ]
+    },
+    {
+      "id": "venus-venera-3",
+      "body": "venus",
+      "name": "Venera 3",
+      "siteName": "Southern hemisphere region",
+      "mission": "Venera 3",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1966-03-01",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": 20,
+      "lon": -80,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 3 (20 N, 80 W); no data returned from the surface.",
+      "summary": "Venera 3 was the first spacecraft to reach another planet's surface — it crashed at 20 N, 80 W in 1966 and never answered.",
+      "narrative": [
+        "Venera 3 launched in November 1965 to land on Venus. On 1 March 1966 it became the first spacecraft to reach the surface of another planet, impacting at about 20 degrees north, 80 degrees west, but its communications failed and no data was returned.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 3 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "1 March 1966"
+        },
+        {
+          "label": "Location",
+          "value": "20 N, 80 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 3",
+        "impact",
+        "1966",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 3",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-4",
+        "venus-venera-5",
+        "venus-venera-6"
+      ]
+    },
+    {
+      "id": "venus-venera-4",
+      "body": "venus",
+      "name": "Venera 4",
+      "siteName": "Equatorial region",
+      "mission": "Venera 4",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1967-10-18",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": 19,
+      "lon": -38,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 4 (19 N, 38 W).",
+      "summary": "Venera 4 measured Venus' atmosphere during descent in 1967, then crushed at 19 N, 38 W.",
+      "narrative": [
+        "Venera 4 launched in June 1967 and measured the Venusian atmosphere during descent, finding it hotter and denser than expected. On 18 October 1967 the lander impacted at about 19 degrees north, 38 degrees west.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 4 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "18 October 1967"
+        },
+        {
+          "label": "Location",
+          "value": "19 N, 38 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 4",
+        "impact",
+        "1967",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 4",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-3",
+        "venus-venera-5",
+        "venus-venera-6"
+      ]
+    },
+    {
+      "id": "venus-venera-6",
+      "body": "venus",
+      "name": "Venera 6",
+      "siteName": "Equatorial region",
+      "mission": "Venera 6",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1969-01-17",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -5,
+      "lon": -23,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 6 (5 S, 23 W).",
+      "summary": "Venera 6 measured Venus' atmosphere in 1969 before being crushed at 5 S, 23 W.",
+      "narrative": [
+        "Venera 6 launched in November 1968 and measured the Venusian atmosphere during descent. On 17 January 1969 it was crushed at about 5 degrees south, 23 degrees west.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 6 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "17 January 1969"
+        },
+        {
+          "label": "Location",
+          "value": "5 S, 23 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 6",
+        "impact",
+        "1969",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 6",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-5",
+        "venus-venera-7",
+        "venus-venera-8"
+      ]
+    },
+    {
+      "id": "venus-venera-5",
+      "body": "venus",
+      "name": "Venera 5",
+      "siteName": "Equatorial region",
+      "mission": "Venera 5",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1969-05-16",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -1.5,
+      "lon": -19,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 5 (1.5 S, 19 W).",
+      "summary": "Venera 5 descended into Venus' atmosphere in 1969 and was crushed at 1.5 S, 19 W.",
+      "narrative": [
+        "Venera 5 launched in January 1969 to measure the Venusian atmosphere. On 16 May 1969 it descended to about 1.5 degrees south, 19 degrees west, where the pressure crushed the lander.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 5 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "16 May 1969"
+        },
+        {
+          "label": "Location",
+          "value": "1.5 S, 19 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 5",
+        "impact",
+        "1969",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 5",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-4",
+        "venus-venera-6",
+        "venus-venera-7"
+      ]
+    },
+    {
+      "id": "venus-venera-7",
+      "body": "venus",
+      "name": "Venera 7",
+      "siteName": "Equatorial region",
+      "mission": "Venera 7",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1970-12-15",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -5,
+      "lon": -9,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 7 (5 S, 351 E); converted to -9 longitude.",
+      "summary": "Venera 7 tipped over on landing in 1970 and transmitted weakly from 5 S, 9 W before falling silent.",
+      "narrative": [
+        "Venera 7 launched in August 1970 to land on Venus. On 15 December 1970 it impacted at about 5 degrees south, 9 degrees west (351 degrees east), tipped over, and transmitted only a weak signal for 23 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 7 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "15 December 1970"
+        },
+        {
+          "label": "Location",
+          "value": "5 S, 9 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 7",
+        "impact",
+        "1970",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 7",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-6",
+        "venus-venera-8",
+        "venus-venera-9"
+      ]
+    },
+    {
+      "id": "venus-kosmos-482",
+      "body": "venus",
+      "name": "Kosmos 482 descent craft",
+      "siteName": "Southern hemisphere region",
+      "mission": "Kosmos 482",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program (failed mission)",
+      "date": "1972-05-03",
+      "status": "Mission failed — descent craft impacted Venus",
+      "statusKind": "failure",
+      "lat": -1.3,
+      "lon": -55,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Kosmos 482 (1.3 S, 305 E); converted to -55 longitude. The mission failed in Earth orbit and the descent craft fell to Venus.",
+      "summary": "Kosmos 482 was a Venera lander that failed in Earth orbit in 1972, then fell to Venus and crashed at 1.3 S, 55 W.",
+      "narrative": [
+        "Kosmos 482 launched in March 1972 as a Venera lander, but its upper stage failed in Earth orbit. The descent craft remained in Earth orbit for 10 years, then fell to Venus and impacted on 3 May 1972 at about 1.3 degrees south, 55 degrees west (305 degrees east).",
+        "The descent craft remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Kosmos 482 descent craft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "3 May 1972"
+        },
+        {
+          "label": "Location",
+          "value": "1.3 S, 55 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Kosmos 482",
+        "impact",
+        "1972",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Kosmos 482",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-8",
+        "venus-venera-7",
+        "venus-venera-9"
+      ]
+    },
+    {
+      "id": "venus-venera-8",
+      "body": "venus",
+      "name": "Venera 8",
+      "siteName": "Equatorial region",
+      "mission": "Venera 8",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Impacted lander — Venera program",
+      "date": "1972-07-22",
+      "status": "Mission failed — lander impacted Venus",
+      "statusKind": "failure",
+      "lat": -10,
+      "lon": -25,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Venera 8 (10 S, 335 E); converted to -25 longitude.",
+      "summary": "Venera 8 measured Venus' surface conditions in 1972 before being crushed at 10 S, 25 W.",
+      "narrative": [
+        "Venera 8 launched in July 1972 to measure surface conditions on Venus. On 22 July 1972 it impacted at about 10 degrees south, 25 degrees west (335 degrees east) and transmitted for about 50 minutes before being crushed.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 8 lander",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "22 July 1972"
+        },
+        {
+          "label": "Location",
+          "value": "10 S, 25 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 8",
+        "impact",
+        "1972",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 8",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-7",
+        "venus-venera-9",
+        "venus-venera-10"
+      ]
+    },
+    {
+      "id": "venus-venera-9",
+      "body": "venus",
+      "name": "Venera 9 lander",
+      "siteName": "Beta Regio region",
+      "mission": "Venera 9",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — first images from Venus surface",
+      "date": "1975-10-22",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 31.01,
+      "lon": -68.36,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Landing within 150 km radius of 31.01 N, 291.64 E as published; converted to -68.36 longitude. Exact landfall unknown.",
+      "summary": "Venera 9 sent the first pictures from Venus' surface in 1975, then fell silent at 31.01 N, 68.36 W.",
+      "narrative": [
+        "Venera 9 landed on 22 October 1975 within 150 km of 31.01 degrees north, 68.36 degrees west (291.64 degrees east) and returned the first images from the surface of Venus, showing a rocky plain under a bright sky. It transmitted for 53 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus. The exact landfall is known only to within 150 km, so the marker is shown as approximate."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 9 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "22 October 1975"
+        },
+        {
+          "label": "Location",
+          "value": "31.01 N, 68.36 W (within 150 km)"
+        },
+        {
+          "label": "Surface transmission",
+          "value": "53 minutes"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 9",
+        "landing",
+        "1975",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 9",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-10",
+        "venus-venera-13",
+        "venus-venera-14"
+      ]
+    },
+    {
+      "id": "venus-venera-10",
+      "body": "venus",
+      "name": "Venera 10 lander",
+      "siteName": "Beta Regio region",
+      "mission": "Venera 10",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1975-10-25",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 15.42,
+      "lon": -68.49,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Landing within 150 km radius of 15.42 N, 291.51 E as published; converted to -68.49 longitude.",
+      "summary": "Venera 10 landed three days after Venera 9 in 1975 and transmitted from 15.42 N, 68.49 W for 65 minutes.",
+      "narrative": [
+        "Venera 10 landed on 25 October 1975 within 150 km of 15.42 degrees north, 68.49 degrees west (291.51 degrees east), about 2,200 km from Venera 9. It transmitted images and environmental data for 65 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 10 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "25 October 1975"
+        },
+        {
+          "label": "Location",
+          "value": "15.42 N, 68.49 W (within 150 km)"
+        },
+        {
+          "label": "Surface transmission",
+          "value": "65 minutes"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 10",
+        "landing",
+        "1975",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 10",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-9",
+        "venus-venera-11",
+        "venus-venera-12"
+      ]
+    },
+    {
       "id": "venus-pv-large-probe",
       "body": "venus",
       "name": "Pioneer Venus Large Probe impact site",
@@ -7151,7 +9940,7 @@
       "mission": "Pioneer Venus Multiprobe",
       "program": "Pioneer Venus",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Atmospheric probe — crushed on impact",
       "date": "1978-12-09",
       "status": "Transmitted for 54 minutes during descent; destroyed on impact",
@@ -7230,7 +10019,7 @@
       "mission": "Pioneer Venus Multiprobe",
       "program": "Pioneer Venus",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Atmospheric probe — survived impact for 67 minutes",
       "date": "1978-12-09",
       "status": "Survived impact and transmitted for 67 minutes from the surface",
@@ -7298,7 +10087,7 @@
       "mission": "Pioneer Venus Multiprobe",
       "program": "Pioneer Venus",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Atmospheric probe — destroyed on impact",
       "date": "1978-12-09",
       "status": "Transmitted during descent; destroyed on impact",
@@ -7360,7 +10149,7 @@
       "mission": "Pioneer Venus Multiprobe",
       "program": "Pioneer Venus",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Atmospheric probe — destroyed on impact",
       "date": "1978-12-09",
       "status": "Transmitted during descent; destroyed on impact",
@@ -7421,7 +10210,7 @@
       "mission": "Pioneer Venus Multiprobe",
       "program": "Pioneer Venus",
       "agency": "NASA",
-      "category": "impact",
+      "category": "abandoned",
       "categoryDetail": "Spacecraft bus — destroyed in the atmosphere",
       "date": "1978-12-09",
       "status": "Burned up at about 110 km altitude",
@@ -7473,6 +10262,489 @@
         "dataset": "nssdca-pioneer-venus",
         "match": "Pioneer Venus Bus"
       }
+    },
+    {
+      "id": "venus-venera-11",
+      "body": "venus",
+      "name": "Venera 11 lander",
+      "siteName": "Southern hemisphere region",
+      "mission": "Venera 11",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1978-12-25",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -14,
+      "lon": -61,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 11 (14 S, 299 E); converted to -61 longitude.",
+      "summary": "Venera 11 landed on Christmas Day 1978 at 14 S, 61 W and measured the surface for 95 minutes.",
+      "narrative": [
+        "Venera 11 landed on 25 December 1978 at about 14 degrees south, 61 degrees west (299 degrees east). It measured surface conditions for 95 minutes before falling silent.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 11 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "25 December 1978"
+        },
+        {
+          "label": "Location",
+          "value": "14 S, 61 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 11",
+        "landing",
+        "1978",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 11",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-10",
+        "venus-venera-12",
+        "venus-venera-13"
+      ]
+    },
+    {
+      "id": "venus-venera-12",
+      "body": "venus",
+      "name": "Venera 12 lander",
+      "siteName": "Southern hemisphere region",
+      "mission": "Venera 12",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1978-12-25",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -7,
+      "lon": -66,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 12 (7 S, 294 E); converted to -66 longitude.",
+      "summary": "Venera 12 landed the same day as Venera 11 in 1978, at 7 S, 66 W, and transmitted for 110 minutes.",
+      "narrative": [
+        "Venera 12 landed on 25 December 1978 at about 7 degrees south, 66 degrees west (294 degrees east), the same day as Venera 11. It transmitted for 110 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 12 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "25 December 1978"
+        },
+        {
+          "label": "Location",
+          "value": "7 S, 66 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 12",
+        "landing",
+        "1978",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 12",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-11",
+        "venus-venera-13",
+        "venus-venera-14"
+      ]
+    },
+    {
+      "id": "venus-venera-13",
+      "body": "venus",
+      "name": "Venera 13 lander",
+      "siteName": "Phoebe Regio region",
+      "mission": "Venera 13",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — first colour images from Venus surface",
+      "date": "1982-03-01",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -7.5,
+      "lon": -55.5,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 13 (7.5 S, 304.5 E); converted to -55.5 longitude.",
+      "summary": "Venera 13 sent the first colour pictures from Venus in 1982, surviving 127 minutes at 7.5 S, 55.5 W.",
+      "narrative": [
+        "Venera 13 landed on 1 March 1982 at about 7.5 degrees south, 55.5 degrees west (304.5 degrees east), east of Phoebe Regio. It returned the first colour images from the Venus surface and survived for 127 minutes, far longer than its 32-minute design life.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 13 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "1 March 1982"
+        },
+        {
+          "label": "Location",
+          "value": "7.5 S, 55.5 W (approximate)"
+        },
+        {
+          "label": "Surface transmission",
+          "value": "127 minutes"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 13",
+        "landing",
+        "1982",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 13",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-14",
+        "venus-venera-9",
+        "venus-vega-1"
+      ]
+    },
+    {
+      "id": "venus-venera-14",
+      "body": "venus",
+      "name": "Venera 14 lander",
+      "siteName": "Phoebe Regio region",
+      "mission": "Venera 14",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Venera program",
+      "date": "1982-03-05",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -13.25,
+      "lon": -49.9,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Venera 14 (13.25 S, 310.1 E); converted to -49.9 longitude.",
+      "summary": "Venera 14 landed 950 km from Venera 13 in 1982 and transmitted from 13.25 S, 49.9 W for 57 minutes.",
+      "narrative": [
+        "Venera 14 landed on 5 March 1982 at about 13.25 degrees south, 49.9 degrees west (310.1 degrees east), about 950 km from Venera 13. It transmitted for 57 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Venera 14 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "5 March 1982"
+        },
+        {
+          "label": "Location",
+          "value": "13.25 S, 49.9 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Venera 14",
+        "landing",
+        "1982",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Venera 14",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-venera-13",
+        "venus-vega-1",
+        "venus-vega-2"
+      ]
+    },
+    {
+      "id": "venus-vega-1",
+      "body": "venus",
+      "name": "Vega 1 lander",
+      "siteName": "Rusalka Planitia region",
+      "mission": "Vega 1",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Vega program",
+      "date": "1985-06-11",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": 7.5,
+      "lon": 177.7,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Vega 1 (7.5 N, 177.7 E).",
+      "summary": "Vega 1 landed on Venus in 1985 at 7.5 N, 177.7 E, then flew on to Halley's Comet — its lander is still there.",
+      "narrative": [
+        "Vega 1 launched in December 1984 to land on Venus and then fly on to Halley's Comet. On 11 June 1985 its lander touched down at about 7.5 degrees north, 177.7 degrees east in Rusalka Planitia and transmitted for about 56 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Vega 1 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "11 June 1985"
+        },
+        {
+          "label": "Location",
+          "value": "7.5 N, 177.7 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Vega 1",
+        "landing",
+        "1985",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Vega 1",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-vega-2",
+        "venus-venera-13",
+        "venus-venera-14"
+      ]
+    },
+    {
+      "id": "venus-vega-2",
+      "body": "venus",
+      "name": "Vega 2 lander",
+      "siteName": "Southern hemisphere region",
+      "mission": "Vega 2",
+      "agency": "Soviet Union",
+      "category": "abandoned",
+      "categoryDetail": "Robotic lander — Vega program",
+      "date": "1985-06-15",
+      "status": "Mission complete — lander remains on surface",
+      "statusKind": "success",
+      "lat": -8.5,
+      "lon": 164.5,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate landing location published for Vega 2 (8.5 S, 164.5 E).",
+      "summary": "Vega 2 landed on Venus in 1985 at 8.5 S, 164.5 E and transmitted for 46 minutes before falling silent.",
+      "narrative": [
+        "Vega 2 launched in December 1984 to land on Venus and then fly on to Halley's Comet. On 15 June 1985 its lander touched down at about 8.5 degrees south, 164.5 degrees east and transmitted for about 46 minutes.",
+        "The lander remains where it struck, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Vega 2 lander",
+          "status": "Still on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Landing",
+          "value": "15 June 1985"
+        },
+        {
+          "label": "Location",
+          "value": "8.5 S, 164.5 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Vega 2",
+        "landing",
+        "1985",
+        "Soviet",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Vega 2",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-vega-1",
+        "venus-venera-14",
+        "venus-magellan"
+      ]
+    },
+    {
+      "id": "venus-pioneer-orbiter",
+      "body": "venus",
+      "name": "Pioneer Venus Orbiter",
+      "siteName": "Southern hemisphere region",
+      "mission": "Pioneer Venus Orbiter",
+      "program": "Pioneer Venus",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Venus mapping mission",
+      "date": "1992-10-08",
+      "status": "Mission complete — orbiter intentionally impacted Venus",
+      "statusKind": "success",
+      "lat": -3.9,
+      "lon": -112.3,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Pioneer Venus Orbiter (3.9 S, 247.7 E); converted to -112.3 longitude.",
+      "summary": "NASA's Pioneer Venus Orbiter mapped Venus for 14 years, then was crashed at 3.9 S, 112.3 W in 1992.",
+      "narrative": [
+        "The Pioneer Venus Orbiter arrived at Venus in 1978 and mapped the surface with radar for 14 years. On 8 October 1992 it was intentionally impacted at about 3.9 degrees south, 112.3 degrees west (247.7 degrees east).",
+        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Pioneer Venus Orbiter",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "8 October 1992"
+        },
+        {
+          "label": "Location",
+          "value": "3.9 S, 112.3 W (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Pioneer Venus Orbiter",
+        "impact",
+        "1992",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Pioneer Venus Orbiter",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-magellan",
+        "venus-pv-large-probe",
+        "venus-pv-bus"
+      ]
+    },
+    {
+      "id": "venus-magellan",
+      "body": "venus",
+      "name": "Magellan spacecraft",
+      "siteName": "Southern hemisphere region",
+      "mission": "Magellan",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Impacted orbiter — Venus radar mapping mission",
+      "date": "1994-10-12",
+      "status": "Mission complete — spacecraft intentionally impacted Venus",
+      "statusKind": "success",
+      "lat": -6.4,
+      "lon": 147,
+      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
+      "coordAccuracy": "approximate",
+      "coordNote": "Approximate impact location published for Magellan (6.4 S, 147 E).",
+      "summary": "Magellan mapped 98% of Venus with radar, then was crashed at 6.4 S, 147 E in 1994.",
+      "narrative": [
+        "Magellan arrived at Venus in 1990 and mapped 98% of the surface with radar, revealing volcanoes and impact craters beneath the clouds. On 12 October 1994 it was intentionally impacted at about 6.4 degrees south, 147 degrees east.",
+        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
+      ],
+      "artifacts": [
+        {
+          "name": "Magellan spacecraft",
+          "status": "Impacted — remains on surface"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "12 October 1994"
+        },
+        {
+          "label": "Location",
+          "value": "6.4 S, 147 E (approximate)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Magellan",
+        "impact",
+        "1994",
+        "abandoned spacecraft"
+      ],
+      "sources": [
+        {
+          "title": "NSSDCA Master Catalog — Magellan",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "venus-pioneer-orbiter",
+        "venus-pv-large-probe",
+        "venus-vega-2"
+      ]
     }
   ]
 }

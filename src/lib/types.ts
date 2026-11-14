@@ -1,13 +1,11 @@
 export type BodyId = 'earth' | 'moon' | 'mars' | 'venus';
 
 export type CategoryId =
+  | 'abandoned'
   | 'launch'
+  | 'landing'
   | 'facility'
-  | 'crewed-landing'
-  | 'robotic-landing'
-  | 'rover'
-  | 'impact'
-  | 'artifact';
+  | 'rover';
 
 export type CoordAccuracy = 'surveyed' | 'mapped' | 'approximate' | 'uncertain';
 export type StatusKind = 'success' | 'partial' | 'failure' | 'ongoing' | 'unknown';
