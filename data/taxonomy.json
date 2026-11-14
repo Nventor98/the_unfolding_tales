@@ -1,6 +1,6 @@
 {
   "$comment": "Taxonomy for the Abandoned but Not Forgotten dataset. Planetary bodies that have a navigable globe are marked hasGlobe=true and carry the texture set used by the renderer.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Abandoned but Not Forgotten",
   "subtitle": "An interactive archive of human exploration sites beyond Earth",
   "license": "Historical text CC BY 4.0. Historical imagery remains the property of NASA and the credited institutions.",
@@ -102,53 +102,39 @@
   ],
   "categories": [
     {
+      "id": "abandoned",
+      "label": "Abandoned / forgotten spacecraft",
+      "short": "Abandoned",
+      "color": "#ff2222",
+      "description": "Spacecraft left behind on the Moon, Mars or Venus — landed, crashed, stopped rovers and impacted orbiters. Shown in red."
+    },
+    {
       "id": "launch",
-      "label": "Launch site",
+      "label": "Launch site (rocket take-off)",
       "short": "Launch",
       "color": "#ffb057",
-      "description": "Where a mission left Earth. Pads, complexes and the concrete that survived them."
+      "description": "Where a mission left Earth. Pads, complexes and the concrete that survived them. Shown in orange."
+    },
+    {
+      "id": "landing",
+      "label": "Landing location",
+      "short": "Landing",
+      "color": "#4fc3ff",
+      "description": "Successful touchdown points for crewed Apollo landings and still-operating landers. Shown in sky blue."
     },
     {
       "id": "facility",
       "label": "Facility or ground station",
       "short": "Facility",
       "color": "#5fe7d8",
-      "description": "Centres where missions were built, tested, flown or listened to."
-    },
-    {
-      "id": "crewed-landing",
-      "label": "Crewed landing site",
-      "short": "Crewed landing",
-      "color": "#8ef2ff",
-      "description": "Places where astronauts landed and left their descent stages behind."
-    },
-    {
-      "id": "robotic-landing",
-      "label": "Robotic landing site",
-      "short": "Robotic landing",
-      "color": "#b39bff",
-      "description": "Uncrewed landers that arrived in one piece — or nearly did."
+      "description": "Centres where missions were built, tested, flown or listened to. Shown in teal."
     },
     {
       "id": "rover",
-      "label": "Rover site",
-      "short": "Rover",
+      "label": "Active rover",
+      "short": "Active rover",
       "color": "#7dffa8",
-      "description": "Where mobile machines worked, stopped, or are still driving."
-    },
-    {
-      "id": "impact",
-      "label": "Impact or crash site",
-      "short": "Impact",
-      "color": "#ff7078",
-      "description": "Spacecraft, spent stages and probes that struck a surface by design or by accident."
-    },
-    {
-      "id": "artifact",
-      "label": "Artifact left behind",
-      "short": "Artifact",
-      "color": "#ff9ee0",
-      "description": "Equipment that was deployed, discarded or deliberately abandoned and is still there."
+      "description": "Rovers still operating on Mars. Shown in green. Stopped rovers are classified as abandoned (red)."
     }
   ]
 }

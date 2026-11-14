@@ -36,7 +36,7 @@
     "agency": { "type": "string" },
     "country": { "type": "string" },
     "category": {
-      "enum": ["launch", "facility", "crewed-landing", "robotic-landing", "rover", "impact", "artifact"]
+      "enum": ["abandoned", "launch", "landing", "facility", "rover"]
     },
     "categoryDetail": { "type": "string", "description": "e.g. S-IVB impact, sample-return lander, Mercury pad." },
     "date": {

@@ -1,35 +1,41 @@
 {
-  "version": "1.0.0",
-  "builtAt": "2026-11-06T12:48:44.872Z",
-  "recordCount": 99,
+  "version": "1.1.0",
+  "builtAt": "2026-11-14T16:20:41.969Z",
+  "recordCount": 150,
   "stats": {
-    "total": 99,
+    "total": 150,
     "byBody": {
-      "earth": 23,
-      "moon": 56,
-      "mars": 15,
-      "venus": 5
+      "earth": 24,
+      "moon": 80,
+      "mars": 24,
+      "venus": 22
     },
     "byCategory": {
+      "abandoned": 117,
       "launch": 10,
+      "landing": 8,
       "facility": 13,
-      "crewed-landing": 6,
-      "robotic-landing": 25,
-      "rover": 7,
-      "impact": 37,
-      "artifact": 1
+      "rover": 2
     },
     "byAgency": {
-      "NASA": 70,
+      "NASA": 81,
       "NASA / US Army": 1,
       "NASA / JPL": 1,
       "CSIRO (Australia) / NASA": 1,
       "NASA (operated with Australia)": 1,
       "NASA / SpaceX": 1,
-      "Soviet Union": 15,
+      "Roscosmos (Russia) / CNSA (China)": 1,
+      "Soviet Union": 36,
+      "ISAS / JAXA (Japan)": 2,
       "ESA / United Kingdom": 1,
       "ESA / Roscosmos": 1,
       "CNSA": 2,
+      "ESA": 1,
+      "JAXA (Japan)": 3,
+      "CNSA (China)": 8,
+      "SpaceIL (Israel)": 1,
+      "ISRO (India)": 1,
+      "ispace (Japan)": 2,
       "Roscosmos": 1,
       "ISRO": 1,
       "NASA / Intuitive Machines": 2,
@@ -40,16 +46,17 @@
       "1930s": 2,
       "1940s": 1,
       "1950s": 3,
-      "1960s": 35,
-      "1970s": 31,
-      "1990s": 4,
-      "2010s": 9,
-      "2000s": 6,
-      "2020s": 7
+      "1960s": 46,
+      "1970s": 42,
+      "1990s": 8,
+      "2010s": 16,
+      "1980s": 5,
+      "2000s": 12,
+      "2020s": 14
     },
     "withImages": 11,
-    "withVerification": 76,
-    "uniqueSources": 88,
+    "withVerification": 100,
+    "uniqueSources": 92,
     "yearRange": [
       1917,
       2025
@@ -59,22 +66,22 @@
     {
       "id": "earth",
       "name": "Earth",
-      "count": 23
+      "count": 24
     },
     {
       "id": "moon",
       "name": "The Moon",
-      "count": 56
+      "count": 80
     },
     {
       "id": "mars",
       "name": "Mars",
-      "count": 15
+      "count": 24
     },
     {
       "id": "venus",
       "name": "Venus",
-      "count": 5
+      "count": 22
     }
   ]
 }

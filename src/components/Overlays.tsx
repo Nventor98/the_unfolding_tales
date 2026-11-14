@@ -34,8 +34,8 @@ export function IntroOverlay({
             <span className="step-number">02</span>
             <span className="step-title">Pick a marker</span>
             <p>
-              Each dot is a documented site. Colour tells you what happened there: a launch, a landing, an impact,
-              or something left behind.
+              Each dot is a documented site. Colour tells you what happened there: red for abandoned spacecraft,
+              orange for launch, blue for landing, teal for facilities.
             </p>
           </div>
           <div>
