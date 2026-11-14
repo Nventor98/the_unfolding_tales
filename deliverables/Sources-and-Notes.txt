@@ -1,0 +1,21 @@
+ABANDONED BUT NOT FORGOTTEN — PRESENTATION NOTES
+
+The PowerPoint is a 9-slide project overview. The screenshots in the deck were supplied by the project owner and show the application UI.
+
+Project status reflected in this presentation: 143 records across Earth (23), Moon (82), Mars (18), and Venus (20); 93 unique source pages; 102 coordinate records cross-checked against ingested source tables.
+
+Color legend: Abandoned #FF2222; Launch #FFB057; Landing #4FC3FF; Facility #5FE7D8; Active rover #7DFFA8.
+
+Important framing: this is an independent educational project built around the NASA Space Apps Challenge theme. It is not an official NASA product or endorsement.
+
+Sources and further reading:
+- Space Data Atlas challenge guide: https://spacedata.swapniltamse.com/challenges/abandoned-but-not-forgotten/
+- Official NASA Space Apps challenge: https://www.spaceappschallenge.org/2026/challenges/nasas-discarded-equipment-storytelling/
+- NASA NSSDCA lunar impacts table: https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html
+- NASA NSSDCA Apollo 16 subsatellite: https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-031D
+- NASA GISS Mars24 lander catalogue: https://www.giss.nasa.gov/tools/mars24/help/landers.html
+- LROC Featured Sites: https://www.lroc.asu.edu/featured_sites
+- NASA Image and Video Library: https://images.nasa.gov/
+- NASA Science — Nozomi: https://science.nasa.gov/mission/nozomi/
+- NASA NSSDCA — Mars Global Surveyor: https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-062A
+- NASA Science — Magellan: https://science.nasa.gov/mission/magellan/
