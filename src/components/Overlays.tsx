@@ -1,66 +1,184 @@
-import type { DatasetStats } from '../lib/types';
+import { useEffect, useMemo, useState } from 'react';
+import type { DatasetStats, SiteRecord } from '../lib/types';
+
+// The Space Data Atlas challenge page recommends NASA Image Library, LROC and HiRISE
+// imagery. These five stories use archival NASA image references already attached to
+// the matching site records, so the Details action always uses that record's coordinates.
+const CINEMATIC_SITE_IDS = [
+  'moon-surveyor-3',
+  'moon-apollo-11-lrrr',
+  'mars-opportunity',
+  'moon-apollo-16',
+  'moon-apollo-17',
+];
 
 export function IntroOverlay({
   open,
   stats,
+  sites,
   onEnter,
   onAbout,
+  onDetails,
 }: {
   open: boolean;
   stats: DatasetStats | null;
+  sites: SiteRecord[];
   onEnter: () => void;
   onAbout: () => void;
+  onDetails: (site: SiteRecord) => void;
 }) {
+  const slides = useMemo(() => {
+    const byId = new Map(sites.map((site) => [site.id, site]));
+    return CINEMATIC_SITE_IDS.map((id) => byId.get(id)).filter(
+      (site): site is SiteRecord => Boolean(site?.images?.[0]),
+    );
+  }, [sites]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const activeSite = slides[activeIndex];
+
+  useEffect(() => {
+    if (!open || paused || slides.length < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const timer = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % slides.length);
+    }, 7000);
+    return () => window.clearInterval(timer);
+  }, [open, paused, slides.length]);
+
+  useEffect(() => {
+    if (activeIndex >= slides.length) setActiveIndex(0);
+  }, [activeIndex, slides.length]);
+
   if (!open) return null;
   return (
     <div className="overlay intro-overlay" role="dialog" aria-modal="true" aria-label="Welcome">
-      <div className="intro-card">
-        <span className="intro-eyebrow">An interactive archive of human exploration</span>
-        <h1>
-          Abandoned
-          <span> but not forgotten</span>
-        </h1>
-        <p className="intro-lede">
-          Every machine we sent to another world had a place it ended up. This is a map of those places: launch
-          pads, landing sites, crash craters, and the equipment still sitting in the dust.
-        </p>
-        <div className="intro-steps">
-          <div>
-            <span className="step-number">01</span>
-            <span className="step-title">Rotate a world</span>
-            <p>Drag to turn the globe, scroll or pinch to zoom. Switch between Earth, the Moon, Mars and Venus.</p>
-          </div>
-          <div>
-            <span className="step-number">02</span>
-            <span className="step-title">Pick a marker</span>
-            <p>
-              Each dot is a documented site. Colour tells you what happened there: red for abandoned spacecraft,
-              orange for launch, blue for landing, teal for facilities.
+      <div className="intro-card intro-card--cinematic">
+        <div className="intro-cinematic-grid">
+          <section className="intro-copy">
+            <span className="intro-eyebrow">An interactive archive of human exploration</span>
+            <h1>
+              Abandoned
+              <span> but not forgotten</span>
+            </h1>
+            <p className="intro-lede">
+              Every machine we sent to another world had a place it ended up. Explore the coordinates—and the
+              archival images—that help tell each story.
             </p>
-          </div>
-          <div>
-            <span className="step-number">03</span>
-            <span className="step-title">Read or listen</span>
-            <p>
-              Every story is sourced and can be narrated aloud. The words on screen are the narration — nothing is
-              invented for effect.
-            </p>
-          </div>
+            <div className="intro-actions intro-actions--cinematic">
+              <button type="button" className="primary-button" onClick={onEnter}>
+                Explore the Globe
+              </button>
+              <button type="button" className="ghost-button" onClick={onAbout}>
+                How the data works
+              </button>
+            </div>
+          </section>
+
+          {activeSite?.images?.[0] && (
+            <CinematicSlide
+              key={activeSite.id}
+              site={activeSite}
+              index={activeIndex}
+              total={slides.length}
+              paused={paused}
+              onPauseToggle={() => setPaused((value) => !value)}
+              onPrevious={() => setActiveIndex((current) => (current - 1 + slides.length) % slides.length)}
+              onNext={() => setActiveIndex((current) => (current + 1) % slides.length)}
+              onChoose={(index) => setActiveIndex(index)}
+              onDetails={() => onDetails(activeSite)}
+            />
+          )}
         </div>
-        <div className="intro-actions">
-          <button type="button" className="primary-button" onClick={onEnter}>
-            Enter the archive
-          </button>
-          <button type="button" className="ghost-button" onClick={onAbout}>
-            How the data works
-          </button>
-        </div>
-        <p className="intro-foot">
-          {stats?.total ?? '—'} documented sites · {stats?.uniqueSources ?? '—'} source pages · coordinates
-          cross-checked against NASA tables · imagery from NASA and its partners
+        <p className="intro-foot intro-foot--cinematic">
+          {stats?.total ?? '—'} documented sites · {stats?.uniqueSources ?? '—'} source pages · positions are
+          sourced; uncertain locations are labelled, never guessed
         </p>
       </div>
     </div>
+  );
+}
+
+function CinematicSlide({
+  site,
+  index,
+  total,
+  paused,
+  onPauseToggle,
+  onPrevious,
+  onNext,
+  onChoose,
+  onDetails,
+}: {
+  site: SiteRecord;
+  index: number;
+  total: number;
+  paused: boolean;
+  onPauseToggle: () => void;
+  onPrevious: () => void;
+  onNext: () => void;
+  onChoose: (index: number) => void;
+  onDetails: () => void;
+}) {
+  const image = site.images![0];
+  const [imageFailed, setImageFailed] = useState(false);
+  return (
+    <section className="cinematic-story" aria-label={`Featured story ${index + 1} of ${total}`}>
+      <div className={`cinematic-image${imageFailed ? ' is-unavailable' : ''}`}>
+        {!imageFailed && (
+          <img
+            src={image.url}
+            alt={image.title}
+            fetchPriority="high"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={() => setImageFailed(true)}
+          />
+        )}
+        {imageFailed && (
+          <div className="cinematic-image-fallback">
+            <span>Archival image unavailable</span>
+            <a href={image.sourceUrl ?? image.url} target="_blank" rel="noreferrer">Open image source ↗</a>
+          </div>
+        )}
+        <div className="cinematic-image-shade" aria-hidden="true" />
+        <div className="cinematic-overline">
+          <span>{site.body.toUpperCase()}</span>
+          <span>STORY {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}</span>
+        </div>
+        <div className="cinematic-caption">
+          <span className="cinematic-mission">{site.mission}</span>
+          <h2>{image.title}</h2>
+          <p>{image.caption || site.summary}</p>
+          <span className="cinematic-credit">
+            {image.credit}
+            {image.sourceUrl && <><span aria-hidden="true"> · </span><a href={image.sourceUrl} target="_blank" rel="noreferrer">Image source ↗</a></>}
+          </span>
+        </div>
+      </div>
+      <div className="cinematic-controls">
+        <div className="cinematic-pagination" aria-label="Choose a featured story">
+          {Array.from({ length: total }, (_, dotIndex) => (
+            <button
+              key={dotIndex}
+              type="button"
+              className={`cinematic-dot${dotIndex === index ? ' is-active' : ''}`}
+              aria-label={`Show story ${dotIndex + 1}`}
+              aria-current={dotIndex === index ? 'true' : undefined}
+              onClick={() => onChoose(dotIndex)}
+            />
+          ))}
+        </div>
+        <div className="cinematic-control-actions">
+          <button type="button" className="cinematic-control-button" onClick={onPrevious} aria-label="Previous story">←</button>
+          <button type="button" className="cinematic-control-button" onClick={onPauseToggle} aria-label={paused ? 'Resume slideshow' : 'Pause slideshow'}>
+            {paused ? 'Play' : 'Pause'}
+          </button>
+          <button type="button" className="cinematic-control-button" onClick={onNext} aria-label="Next story">→</button>
+          <button type="button" className="cinematic-details-button" onClick={onDetails}>Details <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+      <div className="cinematic-site-label">{site.name}</div>
+    </section>
   );
 }
 

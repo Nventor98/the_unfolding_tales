@@ -2520,3 +2520,378 @@ kbd {
   line-height: 1.5;
   color: var(--muted);
 }
+
+/* ---------- cinematic welcome / archival story carousel ---------- */
+.intro-overlay {
+  background:
+    radial-gradient(900px 620px at 78% 12%, rgba(33, 69, 106, 0.32), transparent 70%),
+    rgba(2, 4, 9, 0.86);
+  backdrop-filter: blur(14px) saturate(1.08);
+}
+
+.intro-card--cinematic {
+  width: min(1160px, 100%);
+  max-height: 94vh;
+  padding: clamp(24px, 3.2vw, 42px);
+  overflow-y: auto;
+  background:
+    radial-gradient(800px 420px at 0% 0%, rgba(142, 242, 255, 0.075), transparent 65%),
+    linear-gradient(145deg, rgba(13, 19, 30, 0.98), rgba(5, 8, 15, 0.985));
+}
+
+.intro-cinematic-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.74fr) minmax(0, 1.26fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 54px);
+}
+
+.intro-copy {
+  padding: 8px 0;
+}
+
+.intro-copy .intro-eyebrow {
+  display: inline-block;
+  line-height: 1.6;
+}
+
+.intro-copy h1 {
+  margin: 18px 0 20px;
+  font-size: clamp(40px, 5vw, 68px);
+}
+
+.intro-copy .intro-lede {
+  margin-bottom: 28px;
+  max-width: 430px;
+}
+
+.intro-actions--cinematic {
+  margin-top: 0;
+  align-items: stretch;
+}
+
+.intro-actions--cinematic .primary-button {
+  min-height: 46px;
+}
+
+.cinematic-story {
+  min-width: 0;
+  animation: cinematic-enter 0.55s ease both;
+}
+
+@keyframes cinematic-enter {
+  from { opacity: 0.35; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cinematic-image {
+  position: relative;
+  isolation: isolate;
+  min-height: 360px;
+  aspect-ratio: 1.4 / 1;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 17px;
+  background:
+    radial-gradient(ellipse at 52% 30%, rgba(97, 129, 153, 0.28), transparent 53%),
+    linear-gradient(145deg, #17202a, #090d14 75%);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.44);
+}
+
+.cinematic-image > img {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  animation: cinematic-image-in 0.8s ease both;
+}
+
+@keyframes cinematic-image-in {
+  from { opacity: 0.45; transform: scale(1.025); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.cinematic-image-shade {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(2, 5, 10, 0.52), transparent 26%, rgba(2, 5, 10, 0.12) 48%, rgba(2, 5, 10, 0.9) 100%),
+    linear-gradient(90deg, rgba(2, 5, 10, 0.22), transparent 75%);
+  pointer-events: none;
+}
+
+.cinematic-image-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 8px;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+.cinematic-overline {
+  position: absolute;
+  top: 17px;
+  left: 19px;
+  right: 19px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.84);
+  font: 10px/1.4 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cinematic-caption {
+  position: absolute;
+  right: clamp(18px, 3vw, 30px);
+  bottom: 22px;
+  left: clamp(18px, 3vw, 30px);
+  max-width: 650px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
+}
+
+.cinematic-mission {
+  color: #b6eaf4;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cinematic-caption h2 {
+  max-width: 620px;
+  margin: 7px 0 8px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(23px, 2.9vw, 36px);
+  font-weight: 400;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.cinematic-caption p {
+  display: -webkit-box;
+  max-width: 610px;
+  margin: 0 0 9px;
+  overflow: hidden;
+  color: rgba(241, 246, 252, 0.88);
+  font-size: 12px;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.cinematic-credit {
+  color: rgba(229, 237, 246, 0.66);
+  font-size: 10px;
+}
+
+.cinematic-credit a,
+.cinematic-image-fallback a {
+  color: #d4f7ff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cinematic-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 49px;
+  padding: 8px 2px 0;
+}
+
+.cinematic-pagination,
+.cinematic-control-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cinematic-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  cursor: pointer;
+  transition: width 0.18s ease, background 0.18s ease;
+}
+
+.cinematic-dot.is-active {
+  width: 22px;
+  border-radius: 8px;
+  background: #c6f5ff;
+}
+
+.cinematic-dot:focus-visible,
+.cinematic-control-button:focus-visible,
+.cinematic-details-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.cinematic-control-button {
+  min-width: 34px;
+  height: 32px;
+  padding: 0 9px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text-dim);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cinematic-control-button:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+.cinematic-details-button {
+  height: 34px;
+  margin-left: 2px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #08111a;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cinematic-details-button:hover {
+  background: #c9f4ff;
+}
+
+.cinematic-site-label {
+  margin-top: 1px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.intro-foot--cinematic {
+  margin-top: 23px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  letter-spacing: 0.035em;
+}
+
+@media (max-width: 840px) {
+  .intro-card--cinematic {
+    width: min(720px, 100%);
+  }
+
+  .intro-cinematic-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .intro-copy {
+    padding: 0;
+  }
+
+  .intro-copy h1 {
+    margin: 12px 0;
+    font-size: clamp(38px, 8vw, 58px);
+  }
+
+  .intro-copy .intro-lede {
+    max-width: 620px;
+    margin-bottom: 16px;
+  }
+
+  .cinematic-image {
+    min-height: 310px;
+    aspect-ratio: 1.65 / 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .intro-card--cinematic {
+    max-height: 96vh;
+    padding: 20px 16px 16px;
+  }
+
+  .intro-copy h1 {
+    font-size: 38px;
+  }
+
+  .intro-copy .intro-lede {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .intro-actions--cinematic {
+    gap: 8px;
+  }
+
+  .intro-actions--cinematic .primary-button,
+  .intro-actions--cinematic .ghost-button {
+    height: 39px;
+    padding: 0 12px;
+    font-size: 11px;
+  }
+
+  .cinematic-image {
+    min-height: 320px;
+    aspect-ratio: 0.95 / 1;
+  }
+
+  .cinematic-caption {
+    right: 16px;
+    bottom: 17px;
+    left: 16px;
+  }
+
+  .cinematic-caption h2 {
+    font-size: 23px;
+  }
+
+  .cinematic-caption p {
+    font-size: 11px;
+  }
+
+  .cinematic-overline {
+    top: 13px;
+    left: 14px;
+    right: 14px;
+    font-size: 8px;
+  }
+
+  .cinematic-controls {
+    flex-wrap: wrap;
+  }
+
+  .cinematic-control-actions {
+    gap: 5px;
+  }
+
+  .cinematic-control-button {
+    min-width: 30px;
+    padding: 0 7px;
+  }
+
+  .cinematic-details-button {
+    padding: 0 10px;
+  }
+
+  .intro-foot--cinematic {
+    display: block;
+    font-size: 9px;
+  }
+}
