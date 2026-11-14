@@ -1393,6 +1393,78 @@
         "moon-apollo-17",
         "moon-apollo-17-lm-ascent"
       ]
+    },
+    {
+      "id": "moon-apollo-16-subsatellite",
+      "body": "moon",
+      "name": "Apollo 16 particles and fields subsatellite (PFS-2)",
+      "siteName": "Estimated lunar impact point",
+      "mission": "Apollo 16",
+      "program": "Apollo",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Lunar orbiter subsatellite — impact at orbital decay",
+      "date": "1972-05-29",
+      "status": "Impacted after its lunar orbit rapidly decayed",
+      "statusKind": "success",
+      "lat": 10.16,
+      "lon": 111.9,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "NASA NSSDCA lists an estimated impact at 10.16° N, 111.94° E in the spacecraft catalog; the impacts table rounds longitude to 111.9° E. The map uses the table value.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Apollo 16 subsatellite"
+      },
+      "summary": "Deployed from Apollo 16, the PFS-2 subsatellite returned particle and field measurements before its orbit decayed and it impacted the Moon.",
+      "narrative": [
+        "Apollo 16 deployed its particles and fields subsatellite from the Command and Service Module on 24 April 1972. It returned data until 29 May, when its lunar orbit rapidly decayed and the spacecraft impacted the Moon.",
+        "NASA NSSDCA gives the impact as an estimate: 10.16° N, 111.94° E in the catalog, rounded to 111.9° E in its lunar impacts table. The mapped point follows the table and is labelled approximate."
+      ],
+      "artifacts": [
+        {
+          "name": "Apollo 16 particles and fields subsatellite (PFS-2)",
+          "status": "Impacted after orbital decay",
+          "note": "Impact position estimated by NSSDCA."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "29 May 1972"
+        },
+        {
+          "label": "Published estimate",
+          "value": "10.16° N, 111.9° E (table precision)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Apollo 16",
+        "PFS-2",
+        "subsatellite",
+        "particles and fields",
+        "lunar impact",
+        "1972"
+      ],
+      "sources": [
+        {
+          "title": "Apollo 16 Subsatellite (1972-031D)",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-031D",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-apollo-16",
+        "moon-apollo-16-sivb"
+      ]
     }
   ]
 }

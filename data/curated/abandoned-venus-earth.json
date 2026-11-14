@@ -432,72 +432,9 @@
       "sources": [
         { "title": "NSSDCA Master Catalog — Vega 2", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
       ],
-      "related": ["venus-vega-1", "venus-venera-14", "venus-magellan"]
+      "related": ["venus-vega-1", "venus-venera-14"]
     },
-    {
-      "id": "venus-pioneer-orbiter",
-      "body": "venus",
-      "name": "Pioneer Venus Orbiter",
-      "siteName": "Southern hemisphere region",
-      "mission": "Pioneer Venus Orbiter",
-      "program": "Pioneer Venus",
-      "agency": "NASA",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Venus mapping mission",
-      "date": "1992-10-08",
-      "status": "Mission complete — orbiter intentionally impacted Venus",
-      "statusKind": "success",
-      "lat": -3.9,
-      "lon": -112.3,
-      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Pioneer Venus Orbiter (3.9 S, 247.7 E); converted to -112.3 longitude.",
-      "summary": "NASA's Pioneer Venus Orbiter mapped Venus for 14 years, then was crashed at 3.9 S, 112.3 W in 1992.",
-      "narrative": [
-        "The Pioneer Venus Orbiter arrived at Venus in 1978 and mapped the surface with radar for 14 years. On 8 October 1992 it was intentionally impacted at about 3.9 degrees south, 112.3 degrees west (247.7 degrees east).",
-        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
-      ],
-      "artifacts": [{ "name": "Pioneer Venus Orbiter", "status": "Impacted — remains on surface" }],
-      "facts": [{ "label": "Impact", "value": "8 October 1992" }, { "label": "Location", "value": "3.9 S, 112.3 W (approximate)" }],
-      "images": [],
-      "keywords": ["Pioneer Venus Orbiter", "impact", "1992", "abandoned spacecraft"],
-      "sources": [
-        { "title": "NSSDCA Master Catalog — Pioneer Venus Orbiter", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
-      ],
-      "related": ["venus-magellan", "venus-pv-large-probe", "venus-pv-bus"]
-    },
-    {
-      "id": "venus-magellan",
-      "body": "venus",
-      "name": "Magellan spacecraft",
-      "siteName": "Southern hemisphere region",
-      "mission": "Magellan",
-      "agency": "NASA",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Venus radar mapping mission",
-      "date": "1994-10-12",
-      "status": "Mission complete — spacecraft intentionally impacted Venus",
-      "statusKind": "success",
-      "lat": -6.4,
-      "lon": 147.0,
-      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Magellan (6.4 S, 147 E).",
-      "summary": "Magellan mapped 98% of Venus with radar, then was crashed at 6.4 S, 147 E in 1994.",
-      "narrative": [
-        "Magellan arrived at Venus in 1990 and mapped 98% of the surface with radar, revealing volcanoes and impact craters beneath the clouds. On 12 October 1994 it was intentionally impacted at about 6.4 degrees south, 147 degrees east.",
-        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
-      ],
-      "artifacts": [{ "name": "Magellan spacecraft", "status": "Impacted — remains on surface" }],
-      "facts": [{ "label": "Impact", "value": "12 October 1994" }, { "label": "Location", "value": "6.4 S, 147 E (approximate)" }],
-      "images": [],
-      "keywords": ["Magellan", "impact", "1994", "abandoned spacecraft"],
-      "sources": [
-        { "title": "NSSDCA Master Catalog — Magellan", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
-      ],
-      "related": ["venus-pioneer-orbiter", "venus-pv-large-probe", "venus-vega-2"]
-    },
-    {
+            {
       "id": "venus-kosmos-482",
       "body": "venus",
       "name": "Kosmos 482 descent craft",
@@ -527,37 +464,6 @@
         { "title": "NSSDCA Master Catalog — Kosmos 482", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
       ],
       "related": ["venus-venera-8", "venus-venera-7", "venus-venera-9"]
-    },
-    {
-      "id": "earth-phobos-grunt",
-      "body": "earth",
-      "name": "Phobos-Grunt / Yinghuo-1 reentry",
-      "siteName": "South Pacific Ocean",
-      "mission": "Phobos-Grunt / Yinghuo-1",
-      "agency": "Roscosmos (Russia) / CNSA (China)",
-      "category": "abandoned",
-      "categoryDetail": "Reentered spacecraft — failed Mars mission",
-      "date": "2012-01-15",
-      "status": "Mission failed — spacecraft reentered Earth and was lost",
-      "statusKind": "failure",
-      "lat": -32.7,
-      "lon": -161.1,
-      "coordSystem": "WGS 84 geographic (latitude, longitude east of Greenwich)",
-      "coordAccuracy": "uncertain",
-      "coordNote": "Reentry footprint centre over the South Pacific as tracked by Roscosmos/NASA; exact debris location unknown. Shown as uncertain.",
-      "summary": "Phobos-Grunt, meant to return samples from Mars' moon Phobos, failed in Earth orbit and reentered over the Pacific in 2012.",
-      "narrative": [
-        "Phobos-Grunt launched in November 2011 to return samples from Phobos, Mars' moon, with China's Yinghuo-1 Mars orbiter aboard. Its engine failed in Earth orbit, and the spacecraft reentered Earth's atmosphere on 15 January 2012 over the South Pacific at about 32.7 degrees south, 161.1 degrees west.",
-        "The spacecraft burned up during reentry and was lost. The marker shows the approximate reentry footprint centre, labelled uncertain because no debris was recovered."
-      ],
-      "artifacts": [{ "name": "Phobos-Grunt / Yinghuo-1 spacecraft", "status": "Burned up on reentry — lost", "note": "Reentry footprint approximate." }],
-      "facts": [{ "label": "Reentry", "value": "15 January 2012" }, { "label": "Location", "value": "32.7 S, 161.1 W (approximate footprint)" }],
-      "images": [],
-      "keywords": ["Phobos-Grunt", "Yinghuo-1", "reentry", "2012", "abandoned spacecraft"],
-      "sources": [
-        { "title": "NSSDCA Master Catalog — Phobos-Grunt", "publisher": "NASA NSSDCA", "url": "https://nssdc.gsfc.nasa.gov/nmc/", "accessed": "2026-11-14" }
-      ],
-      "related": ["earth-slc41", "mars-nozomi", "mars-mgs"]
     }
   ]
 }

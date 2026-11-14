@@ -3,8 +3,8 @@
     "title": "Abandoned but Not Forgotten",
     "subtitle": "An interactive archive of human exploration sites beyond Earth",
     "version": "1.1.0",
-    "builtAt": "2026-11-14T16:20:41.969Z",
-    "recordCount": 150,
+    "builtAt": "2026-11-14T17:44:26.178Z",
+    "recordCount": 143,
     "license": "Historical text CC BY 4.0. Historical imagery remains the property of NASA and the credited institutions.",
     "methodology": "Every record is transcribed from a named NASA or peer-reviewed source. Coordinates are stored as published (degrees east, -180…180) and cross-checked against machine-readable snapshots of the source tables in data/ingested."
   },
@@ -142,38 +142,37 @@
     }
   ],
   "stats": {
-    "total": 150,
+    "total": 143,
     "byBody": {
-      "earth": 24,
-      "moon": 80,
-      "mars": 24,
-      "venus": 22
+      "earth": 23,
+      "moon": 82,
+      "mars": 18,
+      "venus": 20
     },
     "byCategory": {
-      "abandoned": 117,
+      "abandoned": 110,
       "launch": 10,
       "landing": 8,
       "facility": 13,
       "rover": 2
     },
     "byAgency": {
-      "NASA": 81,
+      "NASA": 77,
       "NASA / US Army": 1,
       "NASA / JPL": 1,
       "CSIRO (Australia) / NASA": 1,
       "NASA (operated with Australia)": 1,
       "NASA / SpaceX": 1,
-      "Roscosmos (Russia) / CNSA (China)": 1,
-      "Soviet Union": 36,
-      "ISAS / JAXA (Japan)": 2,
+      "Soviet Union": 34,
       "ESA / United Kingdom": 1,
       "ESA / Roscosmos": 1,
       "CNSA": 2,
+      "ISAS / JAXA (Japan)": 1,
       "ESA": 1,
+      "ISRO (India)": 2,
       "JAXA (Japan)": 3,
       "CNSA (China)": 8,
       "SpaceIL (Israel)": 1,
-      "ISRO (India)": 1,
       "ispace (Japan)": 2,
       "Roscosmos": 1,
       "ISRO": 1,
@@ -186,16 +185,16 @@
       "1940s": 1,
       "1950s": 3,
       "1960s": 46,
-      "1970s": 42,
-      "1990s": 8,
-      "2010s": 16,
-      "1980s": 5,
-      "2000s": 12,
-      "2020s": 14
+      "1970s": 40,
+      "1990s": 6,
+      "2010s": 15,
+      "2000s": 11,
+      "2020s": 14,
+      "1980s": 4
     },
     "withImages": 11,
-    "withVerification": 100,
-    "uniqueSources": 92,
+    "withVerification": 102,
+    "uniqueSources": 93,
     "yearRange": [
       1917,
       2025
@@ -1790,67 +1789,6 @@
       ]
     },
     {
-      "id": "earth-phobos-grunt",
-      "body": "earth",
-      "name": "Phobos-Grunt / Yinghuo-1 reentry",
-      "siteName": "South Pacific Ocean",
-      "mission": "Phobos-Grunt / Yinghuo-1",
-      "agency": "Roscosmos (Russia) / CNSA (China)",
-      "category": "abandoned",
-      "categoryDetail": "Reentered spacecraft — failed Mars mission",
-      "date": "2012-01-15",
-      "status": "Mission failed — spacecraft reentered Earth and was lost",
-      "statusKind": "failure",
-      "lat": -32.7,
-      "lon": -161.1,
-      "coordSystem": "WGS 84 geographic (latitude, longitude east of Greenwich)",
-      "coordAccuracy": "uncertain",
-      "coordNote": "Reentry footprint centre over the South Pacific as tracked by Roscosmos/NASA; exact debris location unknown. Shown as uncertain.",
-      "summary": "Phobos-Grunt, meant to return samples from Mars' moon Phobos, failed in Earth orbit and reentered over the Pacific in 2012.",
-      "narrative": [
-        "Phobos-Grunt launched in November 2011 to return samples from Phobos, Mars' moon, with China's Yinghuo-1 Mars orbiter aboard. Its engine failed in Earth orbit, and the spacecraft reentered Earth's atmosphere on 15 January 2012 over the South Pacific at about 32.7 degrees south, 161.1 degrees west.",
-        "The spacecraft burned up during reentry and was lost. The marker shows the approximate reentry footprint centre, labelled uncertain because no debris was recovered."
-      ],
-      "artifacts": [
-        {
-          "name": "Phobos-Grunt / Yinghuo-1 spacecraft",
-          "status": "Burned up on reentry — lost",
-          "note": "Reentry footprint approximate."
-        }
-      ],
-      "facts": [
-        {
-          "label": "Reentry",
-          "value": "15 January 2012"
-        },
-        {
-          "label": "Location",
-          "value": "32.7 S, 161.1 W (approximate footprint)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Phobos-Grunt",
-        "Yinghuo-1",
-        "reentry",
-        "2012",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Phobos-Grunt",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "earth-slc41",
-        "mars-nozomi",
-        "mars-mgs"
-      ]
-    },
-    {
       "id": "earth-slc3e",
       "body": "earth",
       "name": "Vandenberg Space Launch Complex 3E",
@@ -2061,138 +1999,6 @@
       ]
     },
     {
-      "id": "mars-4",
-      "body": "mars",
-      "name": "Mars 4",
-      "siteName": "Margaritifer Terra region",
-      "mission": "Mars 4",
-      "agency": "Soviet Union",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Soviet Mars program",
-      "date": "1974-02-12",
-      "status": "Mission failed — spacecraft impacted Mars",
-      "statusKind": "failure",
-      "lat": -24.6,
-      "lon": -46.3,
-      "coordSystem": "IAU planetocentric areographic, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Mars 4; the spacecraft failed to enter orbit and struck the surface.",
-      "summary": "Mars 4 was meant to orbit Mars and relay for the landers, but its engine failed and it crashed at 24.6 S, 46.3 W in 1974.",
-      "narrative": [
-        "Mars 4 launched in July 1973 to become Mars' first Soviet orbiter and relay data for the Mars 6 and 7 landers. Its main engine failed during the orbit-insertion burn on 12 February 1974, and the spacecraft impacted Mars at about 24.6 degrees south, 46.3 degrees west.",
-        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
-      ],
-      "artifacts": [
-        {
-          "name": "Mars 4 spacecraft",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "12 February 1974"
-        },
-        {
-          "label": "Location",
-          "value": "24.6 S, 46.3 W (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Mars 4",
-        "impact",
-        "1974",
-        "Soviet",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Mars 4",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        },
-        {
-          "title": "Mars24 Sunclock — Mars Lander Missions",
-          "publisher": "NASA GISS",
-          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "mars-5",
-        "mars-6",
-        "mars-3"
-      ]
-    },
-    {
-      "id": "mars-5",
-      "body": "mars",
-      "name": "Mars 5",
-      "siteName": "Margaritifer Terra region",
-      "mission": "Mars 5",
-      "agency": "Soviet Union",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Soviet Mars program",
-      "date": "1974-02-15",
-      "status": "Mission failed — spacecraft impacted Mars",
-      "statusKind": "failure",
-      "lat": -1.05,
-      "lon": -46.55,
-      "coordSystem": "IAU planetocentric areographic, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Mars 5; the spacecraft failed after a few days in orbit and struck the surface.",
-      "summary": "Mars 5 orbited Mars for only a few days in 1974 before failing and crashing at 1.05 S, 46.55 W.",
-      "narrative": [
-        "Mars 5 launched in July 1973 and entered Mars orbit on 12 February 1974. After a few days its systems failed, and on 15 February the spacecraft impacted Mars at about 1.05 degrees south, 46.55 degrees west.",
-        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
-      ],
-      "artifacts": [
-        {
-          "name": "Mars 5 spacecraft",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "15 February 1974"
-        },
-        {
-          "label": "Location",
-          "value": "1.05 S, 46.55 W (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Mars 5",
-        "impact",
-        "1974",
-        "Soviet",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Mars 5",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        },
-        {
-          "title": "Mars24 Sunclock — Mars Lander Missions",
-          "publisher": "NASA GISS",
-          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "mars-4",
-        "mars-6",
-        "mars-3"
-      ]
-    },
-    {
       "id": "mars-6",
       "body": "mars",
       "name": "Mars 6 lander",
@@ -2253,8 +2059,6 @@
         }
       ],
       "related": [
-        "mars-4",
-        "mars-5",
         "mars-3"
       ]
     },
@@ -2431,138 +2235,6 @@
       "related": [
         "mars-viking-1",
         "mars-phoenix"
-      ]
-    },
-    {
-      "id": "mars-viking-2-orbiter",
-      "body": "mars",
-      "name": "Viking 2 Orbiter",
-      "siteName": "Utopia Planitia region",
-      "mission": "Viking 2 Orbiter",
-      "program": "Viking",
-      "agency": "NASA",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Viking program",
-      "date": "1978-07-25",
-      "status": "Mission complete — orbiter intentionally impacted Mars",
-      "statusKind": "success",
-      "lat": 27.3,
-      "lon": 139.9,
-      "coordSystem": "IAU planetocentric areographic, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Viking 2 Orbiter (27.3 N, 139.9 E).",
-      "summary": "The Viking 2 Orbiter mapped Mars for two years, then was crashed at 27.3 N, 139.9 E in 1978.",
-      "narrative": [
-        "The Viking 2 Orbiter arrived at Mars in 1976 and mapped the planet for two years. On 25 July 1978 it was intentionally impacted at about 27.3 degrees north, 139.9 degrees east.",
-        "The orbiter remains at its impact site, catalogued among the abandoned hardware on Mars."
-      ],
-      "artifacts": [
-        {
-          "name": "Viking 2 Orbiter",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "25 July 1978"
-        },
-        {
-          "label": "Location",
-          "value": "27.3 N, 139.9 E (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Viking 2 Orbiter",
-        "impact",
-        "1978",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Viking 2 Orbiter",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        },
-        {
-          "title": "Mars24 Sunclock — Mars Lander Missions",
-          "publisher": "NASA GISS",
-          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "mars-viking-2",
-        "mars-viking-1-orbiter",
-        "mars-viking-1"
-      ]
-    },
-    {
-      "id": "mars-viking-1-orbiter",
-      "body": "mars",
-      "name": "Viking 1 Orbiter",
-      "siteName": "Chryse Planitia region",
-      "mission": "Viking 1 Orbiter",
-      "program": "Viking",
-      "agency": "NASA",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Viking program",
-      "date": "1980-08-07",
-      "status": "Mission complete — orbiter intentionally impacted Mars",
-      "statusKind": "success",
-      "lat": 14.7,
-      "lon": -49.6,
-      "coordSystem": "IAU planetocentric areographic, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Viking 1 Orbiter (14.7 N, 310.4 E); converted to -49.6 longitude.",
-      "summary": "After mapping Mars for four years, the Viking 1 Orbiter was crashed at 14.7 N, 49.6 W in 1980 to protect the surface.",
-      "narrative": [
-        "The Viking 1 Orbiter arrived at Mars in 1976 and mapped the planet for four years. As its propellant ran low, NASA intentionally impacted it on 7 August 1980 at about 14.7 degrees north, 49.6 degrees west, to avoid contaminating the surface.",
-        "The orbiter remains at its impact site, catalogued among the abandoned hardware on Mars."
-      ],
-      "artifacts": [
-        {
-          "name": "Viking 1 Orbiter",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "7 August 1980"
-        },
-        {
-          "label": "Location",
-          "value": "14.7 N, 49.6 W (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Viking 1 Orbiter",
-        "impact",
-        "1980",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Viking 1 Orbiter",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        },
-        {
-          "title": "Mars24 Sunclock — Mars Lander Missions",
-          "publisher": "NASA GISS",
-          "url": "https://www.giss.nasa.gov/tools/mars24/help/landers.html",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "mars-viking-1",
-        "mars-viking-2-orbiter",
-        "mars-viking-2"
       ]
     },
     {
@@ -2777,67 +2449,6 @@
       "related": [
         "mars-phoenix",
         "earth-slc17"
-      ]
-    },
-    {
-      "id": "mars-nozomi",
-      "body": "mars",
-      "name": "Nozomi (Planet-B)",
-      "siteName": "Southern hemisphere region",
-      "mission": "Nozomi / Planet-B",
-      "agency": "ISAS / JAXA (Japan)",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Japanese Mars mission",
-      "date": "2003-12-09",
-      "status": "Mission failed — spacecraft intentionally impacted Mars",
-      "statusKind": "failure",
-      "lat": -22,
-      "lon": 151,
-      "coordSystem": "IAU planetocentric areographic, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Nozomi (22 S, 151 E).",
-      "summary": "Japan's Nozomi orbiter never reached Mars orbit and was crashed at 22 S, 151 E in 2003 after a five-year journey.",
-      "narrative": [
-        "Nozomi, Japan's first Mars mission, launched in 1998. After a difficult journey with gravity assists, it never entered Mars orbit, and on 9 December 2003 it was intentionally impacted at about 22 degrees south, 151 degrees east.",
-        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
-      ],
-      "artifacts": [
-        {
-          "name": "Nozomi spacecraft",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "9 December 2003"
-        },
-        {
-          "label": "Location",
-          "value": "22 S, 151 E (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Nozomi",
-        "Planet-B",
-        "impact",
-        "2003",
-        "Japan",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Nozomi",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "mars-mgs",
-        "mars-polar-lander",
-        "mars-deep-space-2"
       ]
     },
     {
@@ -3092,66 +2703,6 @@
         "earth-slc17"
       ],
       "featured": true
-    },
-    {
-      "id": "mars-mgs",
-      "body": "mars",
-      "name": "Mars Global Surveyor",
-      "siteName": "Southern hemisphere region",
-      "mission": "Mars Global Surveyor",
-      "agency": "NASA",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Mars mapping mission",
-      "date": "2006-11-02",
-      "status": "Mission failed — spacecraft impacted Mars",
-      "statusKind": "failure",
-      "lat": -65,
-      "lon": 167.5,
-      "coordSystem": "IAU planetocentric areographic, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Mars Global Surveyor (65 S, 167.5 E); contact was lost in 2006 and the spacecraft is thought to have impacted.",
-      "summary": "Mars Global Surveyor mapped Mars for a decade, went silent in 2006, and is thought to have crashed at 65 S, 167.5 E.",
-      "narrative": [
-        "Mars Global Surveyor arrived at Mars in 1997 and mapped the planet in unprecedented detail for nearly a decade. Contact was lost on 2 November 2006, and the spacecraft is thought to have impacted Mars at about 65 degrees south, 167.5 degrees east.",
-        "The spacecraft remains at its impact site, catalogued among the abandoned hardware on Mars."
-      ],
-      "artifacts": [
-        {
-          "name": "Mars Global Surveyor spacecraft",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "2 November 2006 (estimated)"
-        },
-        {
-          "label": "Location",
-          "value": "65 S, 167.5 E (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Mars Global Surveyor",
-        "MGS",
-        "impact",
-        "2006",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Mars Global Surveyor",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "mars-nozomi",
-        "mars-viking-1-orbiter",
-        "mars-insight"
-      ]
     },
     {
       "id": "mars-phoenix",
@@ -6906,6 +6457,78 @@
       ]
     },
     {
+      "id": "moon-apollo-16-subsatellite",
+      "body": "moon",
+      "name": "Apollo 16 particles and fields subsatellite (PFS-2)",
+      "siteName": "Estimated lunar impact point",
+      "mission": "Apollo 16",
+      "program": "Apollo",
+      "agency": "NASA",
+      "category": "abandoned",
+      "categoryDetail": "Lunar orbiter subsatellite — impact at orbital decay",
+      "date": "1972-05-29",
+      "status": "Impacted after its lunar orbit rapidly decayed",
+      "statusKind": "success",
+      "lat": 10.16,
+      "lon": 111.9,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "approximate",
+      "coordNote": "NASA NSSDCA lists an estimated impact at 10.16° N, 111.94° E in the spacecraft catalog; the impacts table rounds longitude to 111.9° E. The map uses the table value.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Apollo 16 subsatellite"
+      },
+      "summary": "Deployed from Apollo 16, the PFS-2 subsatellite returned particle and field measurements before its orbit decayed and it impacted the Moon.",
+      "narrative": [
+        "Apollo 16 deployed its particles and fields subsatellite from the Command and Service Module on 24 April 1972. It returned data until 29 May, when its lunar orbit rapidly decayed and the spacecraft impacted the Moon.",
+        "NASA NSSDCA gives the impact as an estimate: 10.16° N, 111.94° E in the catalog, rounded to 111.9° E in its lunar impacts table. The mapped point follows the table and is labelled approximate."
+      ],
+      "artifacts": [
+        {
+          "name": "Apollo 16 particles and fields subsatellite (PFS-2)",
+          "status": "Impacted after orbital decay",
+          "note": "Impact position estimated by NSSDCA."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "29 May 1972"
+        },
+        {
+          "label": "Published estimate",
+          "value": "10.16° N, 111.9° E (table precision)"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Apollo 16",
+        "PFS-2",
+        "subsatellite",
+        "particles and fields",
+        "lunar impact",
+        "1972"
+      ],
+      "sources": [
+        {
+          "title": "Apollo 16 Subsatellite (1972-031D)",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-031D",
+          "accessed": "2026-11-14"
+        },
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-apollo-16",
+        "moon-apollo-16-sivb"
+      ]
+    },
+    {
       "id": "moon-apollo-17-sivb",
       "body": "moon",
       "name": "Apollo 17 S-IVB impact",
@@ -7614,6 +7237,72 @@
         "moon-hiten",
         "moon-kaguya",
         "moon-ladee"
+      ]
+    },
+    {
+      "id": "moon-chandrayaan-1-mip",
+      "body": "moon",
+      "name": "Chandrayaan-1 Moon Impact Probe (MIP)",
+      "siteName": "Shackleton crater vicinity (estimated)",
+      "mission": "Chandrayaan-1",
+      "program": "Chandrayaan-1",
+      "agency": "ISRO (India)",
+      "category": "abandoned",
+      "categoryDetail": "Impact probe — published coordinates are an estimate",
+      "date": "2008-11-14",
+      "status": "Impacted near the lunar south pole; exact site unknown",
+      "statusKind": "success",
+      "lat": -89,
+      "lon": -30,
+      "coordSystem": "Mean Earth/Polar Axis lunar frame, planetocentric (DE421)",
+      "coordAccuracy": "uncertain",
+      "coordNote": "NASA NSSDCA lists 89° S, 30° W as an estimated impact point near Shackleton crater; it explicitly states the exact coordinates are unknown.",
+      "verification": {
+        "dataset": "nssdca-lunar-artifacts",
+        "match": "Chandraya'an 1 MIP"
+      },
+      "summary": "NASA lists the Chandrayaan-1 Moon Impact Probe impact near Shackleton crater at estimated coordinates; the exact location is unknown.",
+      "narrative": [
+        "The Chandrayaan-1 Moon Impact Probe (MIP) impacted near Shackleton crater on 14 November 2008. NASA NSSDCA lists an estimated position of 89 degrees south, 30 degrees west, citing the published mission analysis.",
+        "The NSSDCA table explicitly says the exact coordinates are unknown. The marker therefore represents only the published estimate, not a confirmed location."
+      ],
+      "artifacts": [
+        {
+          "name": "Chandrayaan-1 Moon Impact Probe",
+          "status": "Impacted; exact site unknown",
+          "note": "Marker is the NSSDCA estimate near Shackleton crater."
+        }
+      ],
+      "facts": [
+        {
+          "label": "Impact",
+          "value": "14 November 2008"
+        },
+        {
+          "label": "Published estimate",
+          "value": "89° S, 30° W; exact coordinates unknown"
+        }
+      ],
+      "images": [],
+      "keywords": [
+        "Chandrayaan-1",
+        "MIP",
+        "Moon Impact Probe",
+        "Shackleton crater",
+        "impact",
+        "2008"
+      ],
+      "sources": [
+        {
+          "title": "Table of Anthropogenic Impacts and Spacecraft on the Moon",
+          "publisher": "NASA NSSDCA",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+          "accessed": "2026-11-14"
+        }
+      ],
+      "related": [
+        "moon-chandrayaan-3",
+        "moon-vikram-chandrayaan-2"
       ]
     },
     {
@@ -10623,127 +10312,7 @@
       ],
       "related": [
         "venus-vega-1",
-        "venus-venera-14",
-        "venus-magellan"
-      ]
-    },
-    {
-      "id": "venus-pioneer-orbiter",
-      "body": "venus",
-      "name": "Pioneer Venus Orbiter",
-      "siteName": "Southern hemisphere region",
-      "mission": "Pioneer Venus Orbiter",
-      "program": "Pioneer Venus",
-      "agency": "NASA",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Venus mapping mission",
-      "date": "1992-10-08",
-      "status": "Mission complete — orbiter intentionally impacted Venus",
-      "statusKind": "success",
-      "lat": -3.9,
-      "lon": -112.3,
-      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Pioneer Venus Orbiter (3.9 S, 247.7 E); converted to -112.3 longitude.",
-      "summary": "NASA's Pioneer Venus Orbiter mapped Venus for 14 years, then was crashed at 3.9 S, 112.3 W in 1992.",
-      "narrative": [
-        "The Pioneer Venus Orbiter arrived at Venus in 1978 and mapped the surface with radar for 14 years. On 8 October 1992 it was intentionally impacted at about 3.9 degrees south, 112.3 degrees west (247.7 degrees east).",
-        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
-      ],
-      "artifacts": [
-        {
-          "name": "Pioneer Venus Orbiter",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "8 October 1992"
-        },
-        {
-          "label": "Location",
-          "value": "3.9 S, 112.3 W (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Pioneer Venus Orbiter",
-        "impact",
-        "1992",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Pioneer Venus Orbiter",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "venus-magellan",
-        "venus-pv-large-probe",
-        "venus-pv-bus"
-      ]
-    },
-    {
-      "id": "venus-magellan",
-      "body": "venus",
-      "name": "Magellan spacecraft",
-      "siteName": "Southern hemisphere region",
-      "mission": "Magellan",
-      "agency": "NASA",
-      "category": "abandoned",
-      "categoryDetail": "Impacted orbiter — Venus radar mapping mission",
-      "date": "1994-10-12",
-      "status": "Mission complete — spacecraft intentionally impacted Venus",
-      "statusKind": "success",
-      "lat": -6.4,
-      "lon": 147,
-      "coordSystem": "IAU planetocentric Venus coordinates, east longitude",
-      "coordAccuracy": "approximate",
-      "coordNote": "Approximate impact location published for Magellan (6.4 S, 147 E).",
-      "summary": "Magellan mapped 98% of Venus with radar, then was crashed at 6.4 S, 147 E in 1994.",
-      "narrative": [
-        "Magellan arrived at Venus in 1990 and mapped 98% of the surface with radar, revealing volcanoes and impact craters beneath the clouds. On 12 October 1994 it was intentionally impacted at about 6.4 degrees south, 147 degrees east.",
-        "The spacecraft remains at its impact site, catalogued among the artificial objects on Venus."
-      ],
-      "artifacts": [
-        {
-          "name": "Magellan spacecraft",
-          "status": "Impacted — remains on surface"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Impact",
-          "value": "12 October 1994"
-        },
-        {
-          "label": "Location",
-          "value": "6.4 S, 147 E (approximate)"
-        }
-      ],
-      "images": [],
-      "keywords": [
-        "Magellan",
-        "impact",
-        "1994",
-        "abandoned spacecraft"
-      ],
-      "sources": [
-        {
-          "title": "NSSDCA Master Catalog — Magellan",
-          "publisher": "NASA NSSDCA",
-          "url": "https://nssdc.gsfc.nasa.gov/nmc/",
-          "accessed": "2026-11-14"
-        }
-      ],
-      "related": [
-        "venus-pioneer-orbiter",
-        "venus-pv-large-probe",
-        "venus-vega-2"
+        "venus-venera-14"
       ]
     }
   ]

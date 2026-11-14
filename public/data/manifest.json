@@ -1,40 +1,39 @@
 {
   "version": "1.1.0",
-  "builtAt": "2026-11-14T16:20:41.969Z",
-  "recordCount": 150,
+  "builtAt": "2026-11-14T17:44:26.178Z",
+  "recordCount": 143,
   "stats": {
-    "total": 150,
+    "total": 143,
     "byBody": {
-      "earth": 24,
-      "moon": 80,
-      "mars": 24,
-      "venus": 22
+      "earth": 23,
+      "moon": 82,
+      "mars": 18,
+      "venus": 20
     },
     "byCategory": {
-      "abandoned": 117,
+      "abandoned": 110,
       "launch": 10,
       "landing": 8,
       "facility": 13,
       "rover": 2
     },
     "byAgency": {
-      "NASA": 81,
+      "NASA": 77,
       "NASA / US Army": 1,
       "NASA / JPL": 1,
       "CSIRO (Australia) / NASA": 1,
       "NASA (operated with Australia)": 1,
       "NASA / SpaceX": 1,
-      "Roscosmos (Russia) / CNSA (China)": 1,
-      "Soviet Union": 36,
-      "ISAS / JAXA (Japan)": 2,
+      "Soviet Union": 34,
       "ESA / United Kingdom": 1,
       "ESA / Roscosmos": 1,
       "CNSA": 2,
+      "ISAS / JAXA (Japan)": 1,
       "ESA": 1,
+      "ISRO (India)": 2,
       "JAXA (Japan)": 3,
       "CNSA (China)": 8,
       "SpaceIL (Israel)": 1,
-      "ISRO (India)": 1,
       "ispace (Japan)": 2,
       "Roscosmos": 1,
       "ISRO": 1,
@@ -47,16 +46,16 @@
       "1940s": 1,
       "1950s": 3,
       "1960s": 46,
-      "1970s": 42,
-      "1990s": 8,
-      "2010s": 16,
-      "1980s": 5,
-      "2000s": 12,
-      "2020s": 14
+      "1970s": 40,
+      "1990s": 6,
+      "2010s": 15,
+      "2000s": 11,
+      "2020s": 14,
+      "1980s": 4
     },
     "withImages": 11,
-    "withVerification": 100,
-    "uniqueSources": 92,
+    "withVerification": 102,
+    "uniqueSources": 93,
     "yearRange": [
       1917,
       2025
@@ -66,22 +65,22 @@
     {
       "id": "earth",
       "name": "Earth",
-      "count": 24
+      "count": 23
     },
     {
       "id": "moon",
       "name": "The Moon",
-      "count": 80
+      "count": 82
     },
     {
       "id": "mars",
       "name": "Mars",
-      "count": 24
+      "count": 18
     },
     {
       "id": "venus",
       "name": "Venus",
-      "count": 22
+      "count": 20
     }
   ]
 }
